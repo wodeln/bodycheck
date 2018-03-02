@@ -363,7 +363,7 @@ class api_bodyapi
 
     public function insertExamSession($args)
     {
-        $args['examsessionid'] = $args['examsessionkey'].$args['examsessionuserid'];
+        $args['examsessionid'] = $args['examsessionkey'].$args['examsessionusername'].$args["examsessionbasic"];
         $args['examsessionstarttime'] = TIME;
         $data = array('examsession', $args);
         $sql = $this->pdosql->makeInsert($data);

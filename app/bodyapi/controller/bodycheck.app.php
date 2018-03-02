@@ -421,7 +421,7 @@ class action extends app
                 array (
                     0 =>
                         array (
-                            'answer' => 'B',
+                            'answer' => 'D',
                             'questionID' => 101,
                         ),
                     1 =>
@@ -453,63 +453,63 @@ class action extends app
 
 
         //理论试题
-        $postAnswer = array (
+        /*$postAnswer = array (
             'answerList' =>
                 array (
                     0 =>
                         array (
-                            'answer' => 'B',
-                            'questionID' => '881',
+                            'answer' => 'AD',
+                            'questionID' => '662',
                         ),
                     1 =>
                         array (
-                            'answer' => 'A',
-                            'questionID' => '875',
+                            'answer' => 'D',
+                            'questionID' => '879',
                         ),
                     2 =>
-                        array (
-                            'answer' => 'AD',
-                            'questionID' => '545',
-                        ),
-                    3 =>
-                        array (
-                            'answer' => 'B',
-                            'questionID' => '880',
-                        ),
-                    4 =>
-                        array (
-                            'answer' => 'A',
-                            'questionID' => '873',
-                        ),
-                    5 =>
-                        array (
-                            'answer' => 'A',
-                            'questionID' => '878',
-                        ),
-                    6 =>
-                        array (
-                            'answer' => 'D',
-                            'questionID' => '872',
-                        ),
-                    7 =>
-                        array (
-                            'answer' => 'ACD',
-                            'questionID' => '638',
-                        ),
-                    8 =>
-                        array (
-                            'answer' => 'D',
-                            'questionID' => '877',
-                        ),
-                    9 =>
                         array (
                             'answer' => 'A',
                             'questionID' => '876',
                         ),
-                    10 =>
+                    3 =>
+                        array (
+                            'answer' => 'A',
+                            'questionID' => '873',
+                        ),
+                    4 =>
                         array (
                             'answer' => 'BC',
                             'questionID' => '642',
+                        ),
+                    5 =>
+                        array (
+                            'answer' => 'ACD',
+                            'questionID' => '538',
+                        ),
+                    6 =>
+                        array (
+                            'answer' => 'D',
+                            'questionID' => '877',
+                        ),
+                    7 =>
+                        array (
+                            'answer' => 'AD',
+                            'questionID' => '545',
+                        ),
+                    8 =>
+                        array (
+                            'answer' => 'A',
+                            'questionID' => '875',
+                        ),
+                    9 =>
+                        array (
+                            'answer' => 'A',
+                            'questionID' => '878',
+                        ),
+                    10 =>
+                        array (
+                            'answer' => 'C',
+                            'questionID' => '880',
                         ),
                     11 =>
                         array (
@@ -518,29 +518,25 @@ class action extends app
                         ),
                     12 =>
                         array (
-                            'answer' => 'AD',
-                            'questionID' => '662',
+                            'answer' => 'D',
+                            'questionID' => '872',
                         ),
                     13 =>
                         array (
-                            'answer' => 'D',
-                            'questionID' => '879',
+                            'answer' => 'B',
+                            'questionID' => '881',
                         ),
                     14 =>
                         array (
                             'answer' => 'ACD',
-                            'questionID' => '538',
+                            'questionID' => '638',
                         ),
                 ),
             'basicID' => '2',
             'examID' => '1',
-            'userName' => '15021464552',
-        );
+            'userName' => '15021464554',
+        );*/
 
-        /*$rightAnswer = $this->api->getUserAnswer();
-        $a = $rightAnswer[0]['ehuseranswer'];
-        print_r($a);
-        exit;*/
         $user = $this->user->getUserByUserName($postAnswer["userName"]);
         $basic = $this->basic->getBasicById($postAnswer["basicID"]);
         $r = $this->exam->getExamSettingById($postAnswer["examID"]);
@@ -550,46 +546,52 @@ class action extends app
         {
             $qids = '';
             $qrids = '';
+            $q = '';
             if($p['questions'])$qids = trim($p['questions']," ,");
             if($qids)
-                $qestionsTemp=$this->exam->getQuestionsByIds($qids);
-                $q="";
-                foreach ($qestionsTemp as $k=>$v){
+                if($r["question_type"]==1){
+                    $q = $this->exam->getQuestionListByIds($qids);
+                }else{
+                    $qestionsTemp=$this->exam->getQuestionsByIds($qids);
+                    $q="";
+                    foreach ($qestionsTemp as $k=>$v){
 
-                    $qName="";
-                    if($v['organ_type']==0) $qName="心脏操作试题";
-                    elseif($v['organ_type']==1) $qName="肺部操作试题";
-                    elseif($v['organ_type']==2) $qName="腹部触诊操作试题";
-                    elseif($v['organ_type']==4) $qName="心电图触诊操作试题";
+                        $qName="";
+                        if($v['organ_type']==0) $qName="心脏操作试题";
+                        elseif($v['organ_type']==1) $qName="肺部操作试题";
+                        elseif($v['organ_type']==2) $qName="腹部触诊操作试题";
+                        elseif($v['organ_type']==4) $qName="心电图触诊操作试题";
 
-                    $selectStr="";
-                    foreach ($v['item'] as $k1=>$v1){
-                        //&lt;p&gt;A:汉代&lt;/p&gt;&lt;p&gt;B:唐代&lt;/p&gt;&lt;p&gt;C:宋代&lt;/p&gt;&lt;p&gt;D:元代&lt;/p&gt;
-                        if($k1==0){
-                            $selectStr.="&lt;p&gt;".$v1['item_title'].":".$v1['case_name'];
-                        }else{
-                            $selectStr.="&lt;/p&gt;".$v1['item_title'].":".$v1['case_name'];
+                        $selectStr="";
+                        foreach ($v['item'] as $k1=>$v1){
+                            //&lt;p&gt;A:汉代&lt;/p&gt;&lt;p&gt;B:唐代&lt;/p&gt;&lt;p&gt;C:宋代&lt;/p&gt;&lt;p&gt;D:元代&lt;/p&gt;
+                            if($k1==0){
+                                $selectStr.="&lt;p&gt;".$v1['item_title'].":".$v1['case_name'];
+                            }else{
+                                $selectStr.="&lt;/p&gt;".$v1['item_title'].":".$v1['case_name'];
+                            }
                         }
-                    }
 
-                    $q[$v["opt_question_id"]]['questionid']=$v["opt_question_id"];
-                    $q[$v["opt_question_id"]]['questiontype']=$v["organ_type"]==2? 2:1;
-                    $q[$v["opt_question_id"]]['question']=$qName;
-                    $q[$v["opt_question_id"]]['questionuserid']="0";
-                    $q[$v["opt_question_id"]]['questionusername']="";
-                    $q[$v["opt_question_id"]]['questionlastmodifyuser']="";
-                    $q[$v["opt_question_id"]]['questionselect']=$selectStr;
-                    $q[$v["opt_question_id"]]['questionselectnumber']=count($v['item']);
-                    $q[$v["opt_question_id"]]['questionanswer']=$v['right_item'];
-                    $q[$v["opt_question_id"]]['questiodescribe']="";
-                    $q[$v["opt_question_id"]]['questioknowsid']=array();
-                    $q[$v["opt_question_id"]]['questiocreatetime']=$v['addtime'];
-                    $q[$v["opt_question_id"]]['questionstatus']="1";
-                    $q[$v["opt_question_id"]]['questionhtml']=false;
-                    $q[$v["opt_question_id"]]['questionparent']=0;
-                    $q[$v["opt_question_id"]]['questionsequence']=0;
-                    $q[$v["opt_question_id"]]['questionlevel']="2";
+                        $q[$v["opt_question_id"]]['questionid']=$v["opt_question_id"];
+                        $q[$v["opt_question_id"]]['questiontype']=$v["organ_type"]==2? 2:1;
+                        $q[$v["opt_question_id"]]['question']=$qName;
+                        $q[$v["opt_question_id"]]['questionuserid']="0";
+                        $q[$v["opt_question_id"]]['questionusername']="";
+                        $q[$v["opt_question_id"]]['questionlastmodifyuser']="";
+                        $q[$v["opt_question_id"]]['questionselect']=$selectStr;
+                        $q[$v["opt_question_id"]]['questionselectnumber']=count($v['item']);
+                        $q[$v["opt_question_id"]]['questionanswer']=$v['right_item'];
+                        $q[$v["opt_question_id"]]['questiodescribe']="";
+                        $q[$v["opt_question_id"]]['questioknowsid']=array();
+                        $q[$v["opt_question_id"]]['questiocreatetime']=$v['addtime'];
+                        $q[$v["opt_question_id"]]['questionstatus']="1";
+                        $q[$v["opt_question_id"]]['questionhtml']=false;
+                        $q[$v["opt_question_id"]]['questionparent']=0;
+                        $q[$v["opt_question_id"]]['questionsequence']=0;
+                        $q[$v["opt_question_id"]]['questionlevel']="2";
+                    }
                 }
+
                 $questions[$key] =$q;
             if($p['rowsquestions'])$qrids = trim($p['rowsquestions']," ,");
             if($qrids)
@@ -622,7 +624,7 @@ class action extends app
 
         $this->api->insertExamSession($args);
 
-        $answerInfo = $this->getUserAnswers($postAnswer['answerList'],$q,$r['examsetting']['questype']);
+        $answerInfo = $this->getUserAnswers($postAnswer['answerList'],$questions,$r['examsetting']['questype']);
 
         $answer['examsessionuseranswer']=$answerInfo['answer_list'];
         $answer['examsessiontimelist']=$answerInfo['answer_time'];
@@ -640,13 +642,21 @@ class action extends app
     private function getUserAnswers($answer,$q,$r){
         $userAnswer="";
 //        $sumScore=0;
-        $singleScroe = $r[array_keys($r)[0]]['score'];
+        $questions = array();
+        foreach ($q as $key=>$value){
+            if($value!="") {
+//                $questions = array_merge($questions,$value);
+                foreach ($value as $key1=>$value1){
+                   $questions[$key1]=$value1;
+                }
+            }
+        }
         foreach ($answer as $k=>$v){
             $answerValue = explode(",",$v['answer']);
             $userAnswer['answer_list'][$v['questionID']]=count($answerValue)>1?$answerValue:$answerValue[0];
             $userAnswer['answer_time'][$v['questionID']]=$v['timestamp'];
-            if($q[$v['questionID']]['questionanswer']==$v['answer']){
-                $userAnswer['answer_scrolist'][$v['questionID']]=$singleScroe;
+            if($questions[$v['questionID']]['questionanswer']==$v['answer']){
+                $userAnswer['answer_scrolist'][$v['questionID']]=$r[$questions[$v['questionID']]["questiontype"]]["score"];
             }else{
                 $userAnswer['answer_scrolist'][$v['questionID']]=0;
             }

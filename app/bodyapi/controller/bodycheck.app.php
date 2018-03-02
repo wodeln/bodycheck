@@ -415,8 +415,134 @@ class action extends app
 //        $json = json_encode($test);
 //        echo $json;exit;
 
+        //心肺音
+        /*$postAnswer = array (
+            'answerList' =>
+                array (
+                    0 =>
+                        array (
+                            'answer' => 'B',
+                            'questionID' => 101,
+                        ),
+                    1 =>
+                        array (
+                            'answer' => 'E',
+                            'questionID' => 102,
+                        ),
+                    2 =>
+                        array (
+                            'answer' => 'C',
+                            'questionID' => 103,
+                        ),
+                    3 =>
+                        array (
+                            'answer' => 'E',
+                            'questionID' => 104,
+                        ),
+                    4 =>
+                        array (
+                            'answer' => 'D',
+                            'questionID' => 105,
+                        ),
+                ),
+            'basicID' => '2',
+            'examID' => '2',
+            'userName' => '15021464554',
+        );*/
 
-        $basic = $this->basic->getBasicById($postAnswer["basicID"]=87);
+
+
+        //理论试题
+        $postAnswer = array (
+            'answerList' =>
+                array (
+                    0 =>
+                        array (
+                            'answer' => 'B',
+                            'questionID' => '881',
+                        ),
+                    1 =>
+                        array (
+                            'answer' => 'A',
+                            'questionID' => '875',
+                        ),
+                    2 =>
+                        array (
+                            'answer' => 'AD',
+                            'questionID' => '545',
+                        ),
+                    3 =>
+                        array (
+                            'answer' => 'B',
+                            'questionID' => '880',
+                        ),
+                    4 =>
+                        array (
+                            'answer' => 'A',
+                            'questionID' => '873',
+                        ),
+                    5 =>
+                        array (
+                            'answer' => 'A',
+                            'questionID' => '878',
+                        ),
+                    6 =>
+                        array (
+                            'answer' => 'D',
+                            'questionID' => '872',
+                        ),
+                    7 =>
+                        array (
+                            'answer' => 'ACD',
+                            'questionID' => '638',
+                        ),
+                    8 =>
+                        array (
+                            'answer' => 'D',
+                            'questionID' => '877',
+                        ),
+                    9 =>
+                        array (
+                            'answer' => 'A',
+                            'questionID' => '876',
+                        ),
+                    10 =>
+                        array (
+                            'answer' => 'BC',
+                            'questionID' => '642',
+                        ),
+                    11 =>
+                        array (
+                            'answer' => 'B',
+                            'questionID' => '874',
+                        ),
+                    12 =>
+                        array (
+                            'answer' => 'AD',
+                            'questionID' => '662',
+                        ),
+                    13 =>
+                        array (
+                            'answer' => 'D',
+                            'questionID' => '879',
+                        ),
+                    14 =>
+                        array (
+                            'answer' => 'ACD',
+                            'questionID' => '538',
+                        ),
+                ),
+            'basicID' => '2',
+            'examID' => '1',
+            'userName' => '15021464552',
+        );
+
+        /*$rightAnswer = $this->api->getUserAnswer();
+        $a = $rightAnswer[0]['ehuseranswer'];
+        print_r($a);
+        exit;*/
+        $user = $this->user->getUserByUserName($postAnswer["userName"]);
+        $basic = $this->basic->getBasicById($postAnswer["basicID"]);
         $r = $this->exam->getExamSettingById($postAnswer["examID"]);
         $questions = array();
         $questionrows = array();
@@ -491,7 +617,8 @@ class action extends app
         $args['examsessionkey'] = $r['examid'];
         $args['examsessionissave'] = 0;
         $args['examsessionbasic'] = $postAnswer["basicID"];
-        $args['examsessionuserid'] = $postAnswer["userID"];
+        $args['examsessionuserid'] = $user["userid"];
+        $args['examsessionusername'] = $postAnswer["userName"];
 
         $this->api->insertExamSession($args);
 
@@ -503,7 +630,7 @@ class action extends app
         $answer['examsessionstatus']=2;
         $answer['examsessionscore']=$answerInfo['sum_score'];
 
-        $sessionId=$postAnswer['examID'].$postAnswer['userID'];
+        $sessionId=$postAnswer['examID'].$postAnswer['userName'].$postAnswer['basicID'];
 
         $this->exam->modifyExamSession($answer,$sessionId);
 
@@ -548,7 +675,7 @@ class action extends app
     }
 
     /**
-     * 获取说有课程表
+     * 获取所有课程表
      */
     private function getTimeTables(){
         $data = $_POST;
@@ -869,6 +996,10 @@ class action extends app
         $args['basicexam']['notviewscore']=0;
 
         $this->basic->setBasicConfig($basicid, $args);
+    }
+
+    private function delUnitTest(){
+
     }
 
     private function readOptionHeard(){

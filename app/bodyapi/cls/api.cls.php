@@ -427,6 +427,18 @@ class api_bodyapi
         $sql = $this->pdosql->makeSelect($data);
         return $this->db->fetchAll($sql, false, array('examsetting', 'examquestions', 'examscore'));
     }
+
+    public function getExamHistoryByUserExamPaper($args){
+        $data = array(false, 'examhistory', $args);
+        $sql = $this->pdosql->makeSelect($data);
+        return $this->db->fetchAll($sql, false, array('ehquestion', 'ehsetting', 'ehscorelist','ehuseranswer'));
+    }
+
+    public function getInfoByExamPaper($args){
+        $data = array(false, 'examhistory', $args);
+        $sql = $this->pdosql->makeSelect($data);
+        return $this->db->fetchAll($sql, false, array('ehquestion', 'ehsetting', 'ehscorelist','ehuseranswer'));
+    }
 }
 
 ?>

@@ -1012,6 +1012,53 @@ class action extends app
 
     }
 
+    private function getExamHistoryByUserExamPaper(){
+        $paperId = $this->ev->post("paper_id");
+        $examId = $this->ev->post("exam_id");
+        $userName = $this->ev->post("user_name");
+
+//        $paperId = 2;
+//        $examId = 2;
+//        $userName = 15021464551;
+
+       /* $data = $_POST;
+
+        $this->save_log($data,"history");*/
+
+        $args[] = array("AND", "ehexamid = :ehexamid", 'ehexamid', $paperId);
+        $args[] = array("AND", "ehbasicid = :ehbasicid", 'ehbasicid', $examId);
+        $args[] = array("AND", "ehusername = :ehusername", 'ehusername', $userName);
+
+        $info = $this->api->getExamHistoryByUserExamPaper($args);
+
+        $userAnswer = $info[0]["ehuseranswer"];
+        $i=0;
+        foreach ($userAnswer as $k=>$v){
+            $temp[$i]["question_id"]=$k;
+            $temp[$i]["user_answer"]=$v;
+            $i++;
+        }
+        $info[0]["ehuseranswer"]=$temp;
+//        foreach ($infos as $k=>$v){
+//
+//        }
+        exit(json_encode($info[0]));
+    }
+
+    private function getInfoByExamPaper(){
+        $paperId = $this->ev->post("paper_id");
+        $examId = $this->ev->post("exam_id");
+
+        /*$paperId = 1;
+        $examId = 2;*/
+
+        $args[] = array("AND", "ehexamid = :ehexamid", 'ehexamid', $paperId);
+        $args[] = array("AND", "ehbasicid = :ehbasicid", 'ehbasicid', $examId);
+
+        $infos = $this->api->getInfoByExamPaper($args);
+        exit(json_encode($infos));
+    }
+
     private function readOptionHeard(){
         $filePath = 'files/question.xls';
         $reader = new PHPExcel_Reader_Excel2007();

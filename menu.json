@@ -1,0 +1,728 @@
+[
+  {
+    "text": "心脏听诊",
+    "id": "95",
+    "menu_code": "0",
+    "father_code": "11",
+    "nodes": [
+      {
+        "text": "听诊基础",
+        "id": "1",
+        "menu_code": "48000",
+        "father_code": "0",
+        "nodes": [
+          {
+            "text": "心脏解剖",
+            "id": "2",
+            "menu_code": "48050",
+            "father_code": "48000",
+            "nodes": ""
+          },
+          {
+            "text": "心脏瓣膜听诊区",
+            "id": "3",
+            "menu_code": "48051",
+            "father_code": "48000",
+            "nodes": ""
+          },
+          {
+            "text": "心动周期与心音产生的机理",
+            "id": "4",
+            "menu_code": "48052",
+            "father_code": "48000",
+            "nodes": [
+              {
+                "text": "心动周期中心音的变化",
+                "id": "5",
+                "menu_code": "48111",
+                "father_code": "48052",
+                "nodes": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "心脏听诊",
+        "id": "6",
+        "menu_code": "48001",
+        "father_code": "0",
+        "nodes": [
+          {
+            "text": "心率",
+            "id": "7",
+            "menu_code": "48053",
+            "father_code": "48001",
+            "nodes": ""
+          },
+          {
+            "text": "心律",
+            "id": "8",
+            "menu_code": "48054",
+            "father_code": "48001",
+            "nodes": [
+              {
+                "text": "期前收缩",
+                "id": "9",
+                "menu_code": "48116",
+                "father_code": "48054",
+                "nodes": ""
+              }
+            ]
+          },
+          {
+            "text": "额外心音",
+            "id": "16",
+            "menu_code": "48056",
+            "father_code": "48001",
+            "nodes": [
+              {
+                "text": "舒张期额外心音",
+                "id": "17",
+                "menu_code": "48121",
+                "father_code": "48056",
+                "nodes": [
+                  {
+                    "text": "奔马律",
+                    "id": "18",
+                    "menu_code": "48214",
+                    "father_code": "48121",
+                    "nodes": ""
+                  }
+                ]
+              },
+              {
+                "text": "收缩期额外心音",
+                "id": "19",
+                "menu_code": "48122",
+                "father_code": "48056",
+                "nodes": [
+                  {
+                    "text": "收缩早期喷射音",
+                    "id": "20",
+                    "menu_code": "48218",
+                    "father_code": "48122",
+                    "nodes": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "杂音",
+            "id": "21",
+            "menu_code": "48057",
+            "father_code": "48001",
+            "nodes": [
+              {
+                "text": "特性与听诊要点",
+                "id": "22",
+                "menu_code": "48126",
+                "father_code": "48057",
+                "nodes": ""
+              },
+              {
+                "text": "临床意义",
+                "id": "23",
+                "menu_code": "48127",
+                "father_code": "48057",
+                "nodes": [
+                  {
+                    "text": "收缩期杂音",
+                    "id": "24",
+                    "menu_code": "48225",
+                    "father_code": "48127",
+                    "nodes": [
+                      {
+                        "text": "肺动脉瓣区",
+                        "id": "25",
+                        "menu_code": "48317",
+                        "father_code": "48225",
+                        "nodes": ""
+                      },
+                      {
+                        "text": "胸骨左缘三﹑四肋间",
+                        "id": "26",
+                        "menu_code": "48318",
+                        "father_code": "48225",
+                        "nodes": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "舒张期杂音",
+                    "id": "27",
+                    "menu_code": "48226",
+                    "father_code": "48127",
+                    "nodes": [
+                      {
+                        "text": "二尖瓣区",
+                        "id": "28",
+                        "menu_code": "48320",
+                        "father_code": "48226",
+                        "nodes": ""
+                      },
+                      {
+                        "text": "主动脉瓣区",
+                        "id": "29",
+                        "menu_code": "48322",
+                        "father_code": "48226",
+                        "nodes": ""
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "少见心脏病",
+            "id": "30",
+            "menu_code": "48059",
+            "father_code": "48001",
+            "nodes": [
+              {
+                "text": "先天性心血管病",
+                "id": "31",
+                "menu_code": "48128",
+                "father_code": "48059",
+                "nodes": ""
+              }
+            ]
+          },
+          {
+            "text": "心音",
+            "id": "94",
+            "menu_code": "48055",
+            "father_code": "48001",
+            "nodes": [
+              {
+                "text": "强度改变",
+                "id": "10",
+                "menu_code": "48118",
+                "father_code": "48055",
+                "nodes": [
+                  {
+                    "text": "第一心音",
+                    "id": "11",
+                    "menu_code": "48209",
+                    "father_code": "48118",
+                    "nodes": ""
+                  },
+                  {
+                    "text": "第二心音",
+                    "id": "12",
+                    "menu_code": "48210",
+                    "father_code": "48118",
+                    "nodes": [
+                      {
+                        "text": "第二心音增强",
+                        "id": "13",
+                        "menu_code": "48303",
+                        "father_code": "48210",
+                        "nodes": ""
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "text": "心音分裂",
+                "id": "14",
+                "menu_code": "48120",
+                "father_code": "48055",
+                "nodes": [
+                  {
+                    "text": "S2分裂",
+                    "id": "15",
+                    "menu_code": "48213",
+                    "father_code": "48120",
+                    "nodes": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "肺部听诊",
+    "id": "96",
+    "menu_code": "1",
+    "father_code": "11",
+    "nodes": [
+      {
+        "text": "听诊基础",
+        "id": "32",
+        "menu_code": "48020",
+        "father_code": "1",
+        "nodes": ""
+      },
+      {
+        "text": "肺部听诊",
+        "id": "33",
+        "menu_code": "48021",
+        "father_code": "1",
+        "nodes": [
+          {
+            "text": "正常呼吸音",
+            "id": "34",
+            "menu_code": "48079",
+            "father_code": "48021",
+            "nodes": [
+              {
+                "text": "支气管呼吸音",
+                "id": "35",
+                "menu_code": "48500",
+                "father_code": "48079",
+                "nodes": ""
+              },
+              {
+                "text": "肺泡呼吸音",
+                "id": "36",
+                "menu_code": "48501",
+                "father_code": "48079",
+                "nodes": ""
+              },
+              {
+                "text": "支气管肺泡呼吸音",
+                "id": "37",
+                "menu_code": "48502",
+                "father_code": "48079",
+                "nodes": ""
+              }
+            ]
+          },
+          {
+            "text": "呼吸频率",
+            "id": "38",
+            "menu_code": "48080",
+            "father_code": "48021",
+            "nodes": ""
+          },
+          {
+            "text": "呼吸节律",
+            "id": "39",
+            "menu_code": "48081",
+            "father_code": "48021",
+            "nodes": ""
+          },
+          {
+            "text": "异常呼吸音",
+            "id": "40",
+            "menu_code": "48082",
+            "father_code": "48021",
+            "nodes": [
+              {
+                "text": "异常肺泡呼吸音",
+                "id": "41",
+                "menu_code": "48514",
+                "father_code": "48082",
+                "nodes": [
+                  {
+                    "text": "肺泡呼吸音增强",
+                    "id": "42",
+                    "menu_code": "48610",
+                    "father_code": "48514",
+                    "nodes": ""
+                  },
+                  {
+                    "text": "肺泡呼吸音减弱或消失",
+                    "id": "43",
+                    "menu_code": "48611",
+                    "father_code": "48514",
+                    "nodes": ""
+                  },
+                  {
+                    "text": "断续性呼吸",
+                    "id": "44",
+                    "menu_code": "48613",
+                    "father_code": "48514",
+                    "nodes": ""
+                  },
+                  {
+                    "text": "粗糙性呼吸音",
+                    "id": "45",
+                    "menu_code": "48614",
+                    "father_code": "48514",
+                    "nodes": ""
+                  }
+                ]
+              },
+              {
+                "text": "异常支气管呼吸音",
+                "id": "46",
+                "menu_code": "48515",
+                "father_code": "48082",
+                "nodes": [
+                  {
+                    "text": "肺组织实变",
+                    "id": "47",
+                    "menu_code": "48615",
+                    "father_code": "48515",
+                    "nodes": ""
+                  },
+                  {
+                    "text": "肺内大空腔",
+                    "id": "48",
+                    "menu_code": "48616",
+                    "father_code": "48515",
+                    "nodes": ""
+                  }
+                ]
+              },
+              {
+                "text": "异常支气管肺泡呼吸音",
+                "id": "49",
+                "menu_code": "48516",
+                "father_code": "48082",
+                "nodes": [
+                  {
+                    "text": "肺小实变",
+                    "id": "50",
+                    "menu_code": "48618",
+                    "father_code": "48516",
+                    "nodes": ""
+                  },
+                  {
+                    "text": "深部肺实变",
+                    "id": "51",
+                    "menu_code": "48619",
+                    "father_code": "48516",
+                    "nodes": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "附加音",
+            "id": "52",
+            "menu_code": "48083",
+            "father_code": "48021",
+            "nodes": [
+              {
+                "text": "湿罗音",
+                "id": "53",
+                "menu_code": "48517",
+                "father_code": "48083",
+                "nodes": [
+                  {
+                    "text": "粗湿罗音",
+                    "id": "54",
+                    "menu_code": "48621",
+                    "father_code": "48517",
+                    "nodes": [
+                      {
+                        "text": "响亮性粗湿罗音",
+                        "id": "55",
+                        "menu_code": "48710",
+                        "father_code": "48621",
+                        "nodes": ""
+                      },
+                      {
+                        "text": "非响亮性粗湿罗",
+                        "id": "56",
+                        "menu_code": "48711",
+                        "father_code": "48621",
+                        "nodes": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "中湿罗音",
+                    "id": "57",
+                    "menu_code": "48622",
+                    "father_code": "48517",
+                    "nodes": [
+                      {
+                        "text": "响亮中湿罗音",
+                        "id": "58",
+                        "menu_code": "48714",
+                        "father_code": "48622",
+                        "nodes": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "细湿罗音",
+                    "id": "59",
+                    "menu_code": "48623",
+                    "father_code": "48517",
+                    "nodes": [
+                      {
+                        "text": "响亮性细湿罗音",
+                        "id": "60",
+                        "menu_code": "48717",
+                        "father_code": "48623",
+                        "nodes": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "捻发音",
+                    "id": "61",
+                    "menu_code": "48624",
+                    "father_code": "48517",
+                    "nodes": ""
+                  },
+                  {
+                    "text": "Velcro啰音",
+                    "id": "62",
+                    "menu_code": "48625",
+                    "father_code": "48517",
+                    "nodes": ""
+                  }
+                ]
+              },
+              {
+                "text": "干罗音",
+                "id": "63",
+                "menu_code": "48518",
+                "father_code": "48083",
+                "nodes": [
+                  {
+                    "text": "高调干罗音",
+                    "id": "64",
+                    "menu_code": "48627",
+                    "father_code": "48518",
+                    "nodes": [
+                      {
+                        "text": "哨笛音",
+                        "id": "65",
+                        "menu_code": "48721",
+                        "father_code": "48627",
+                        "nodes": ""
+                      },
+                      {
+                        "text": "鸟鸣音",
+                        "id": "66",
+                        "menu_code": "48908",
+                        "father_code": "48627",
+                        "nodes": ""
+                      },
+                      {
+                        "text": "双相性哮鸣音",
+                        "id": "67",
+                        "menu_code": "48725",
+                        "father_code": "48627",
+                        "nodes": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "低调干罗音",
+                    "id": "68",
+                    "menu_code": "48628",
+                    "father_code": "48518",
+                    "nodes": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "语音共振",
+            "id": "69",
+            "menu_code": "48084",
+            "father_code": "48021",
+            "nodes": [
+              {
+                "text": "语音共振正常",
+                "id": "70",
+                "menu_code": "48519",
+                "father_code": "48084",
+                "nodes": ""
+              },
+              {
+                "text": "语音共振增强",
+                "id": "71",
+                "menu_code": "48521",
+                "father_code": "48084",
+                "nodes": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "text": "鉴别听诊",
+        "id": "72",
+        "menu_code": "48086",
+        "father_code": "1",
+        "nodes": [
+          {
+            "text": "鉴别听诊",
+            "id": "73",
+            "menu_code": "48087",
+            "father_code": "48086",
+            "nodes": ""
+          },
+          {
+            "text": "鉴别听诊",
+            "id": "74",
+            "menu_code": "48088",
+            "father_code": "48086",
+            "nodes": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "text": "腹部触诊",
+    "id": "97",
+    "menu_code": "2",
+    "father_code": "11",
+    "nodes": [
+      {
+        "text": "基础知识",
+        "id": "75",
+        "menu_code": "48040",
+        "father_code": "2",
+        "nodes": ""
+      },
+      {
+        "text": "腹部触诊内容",
+        "id": "76",
+        "menu_code": "48041",
+        "father_code": "2",
+        "nodes": [
+          {
+            "text": "脏器触诊",
+            "id": "77",
+            "menu_code": "48060",
+            "father_code": "48041",
+            "nodes": [
+              {
+                "text": "肝脏触诊",
+                "id": "78",
+                "menu_code": "48800",
+                "father_code": "48060",
+                "nodes": ""
+              },
+              {
+                "text": "脾脏触诊",
+                "id": "79",
+                "menu_code": "48801",
+                "father_code": "48060",
+                "nodes": ""
+              },
+              {
+                "text": "胆囊触诊",
+                "id": "80",
+                "menu_code": "48802",
+                "father_code": "48060",
+                "nodes": ""
+              }
+            ]
+          },
+          {
+            "text": "腹部包块",
+            "id": "81",
+            "menu_code": "48058",
+            "father_code": "48041",
+            "nodes": ""
+          }
+        ]
+      },
+      {
+        "text": "乳房触诊",
+        "id": "82",
+        "menu_code": "48042",
+        "father_code": "2",
+        "nodes": ""
+      },
+      {
+        "text": "腹部听诊",
+        "id": "83",
+        "menu_code": "48043",
+        "father_code": "2",
+        "nodes": ""
+      }
+    ]
+  },
+  {
+    "text": "心电图课件",
+    "id": "98",
+    "menu_code": "4",
+    "father_code": "11",
+    "nodes": [
+      {
+        "text": "心电图教学软件",
+        "id": "84",
+        "menu_code": "48044",
+        "father_code": "4",
+        "nodes": [
+          {
+            "text": "临床心电学的基本知识",
+            "id": "85",
+            "menu_code": "48075",
+            "father_code": "48044",
+            "nodes": ""
+          },
+          {
+            "text": "心电图的测量和正常数据",
+            "id": "86",
+            "menu_code": "48076",
+            "father_code": "48044",
+            "nodes": ""
+          },
+          {
+            "text": "临床常见异常心电图",
+            "id": "87",
+            "menu_code": "48077",
+            "father_code": "48044",
+            "nodes": [
+              {
+                "text": "心房、心室肥大",
+                "id": "88",
+                "menu_code": "48175",
+                "father_code": "48077",
+                "nodes": ""
+              },
+              {
+                "text": "心肌缺血与ST-T改变",
+                "id": "89",
+                "menu_code": "48176",
+                "father_code": "48077",
+                "nodes": ""
+              },
+              {
+                "text": "心肌梗死",
+                "id": "90",
+                "menu_code": "48177",
+                "father_code": "48077",
+                "nodes": ""
+              },
+              {
+                "text": "心律失常",
+                "id": "91",
+                "menu_code": "48178",
+                "father_code": "48077",
+                "nodes": [
+                  {
+                    "text": "传导异常",
+                    "id": "92",
+                    "menu_code": "48280",
+                    "father_code": "48178",
+                    "nodes": ""
+                  }
+                ]
+              },
+              {
+                "text": "电解质紊乱和药物影响",
+                "id": "93",
+                "menu_code": "48180",
+                "father_code": "48077",
+                "nodes": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

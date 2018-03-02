@@ -1,0 +1,685 @@
+考试列表
+请求地址：index.php?bodyapi-app-bodycheck-getExamsByUsername
+参数： user_name : 教师登录用户名
+
+返回：
+    [
+        {
+            "basicid": "1",             //考试ID
+            "basic": "演示考场",         //考试名称
+            "basicexam": {
+                "model": "0",
+                "changesequence": "0",
+                "auto": "1",
+                "autotemplate": "exampaper_paper",
+                "self": "1",                        //理论考试考卷ID
+                "selftemplate": "exam_paper",
+                "heart_lung": "17",                 //心肺考试考卷ID
+                "bowel": "",                        //心电图考试考卷ID
+                "touch": "",                        //腹部触诊考试考卷ID
+                "cardiogram": "",
+                "selectrule": "0",
+                "examnumber": "0",
+                "notviewscore": "0",
+                "opentime": {
+                    "start": false,
+                    "end": false
+                },
+                "selectrule": "0",
+                "examnumber": "0",
+                "notviewscore": "0",
+                "finish_theory_num": "8",           //理论考试以考人数
+                "finish_heartlung_num": "0",        //心肺考试已考人数
+                "finish_bowel_num": "0",            //心电图考试已考人数
+                "finish_touch_num": "0",            //腹部触诊已考人数
+                "theory_score": "100",              //理论考试总分
+                "heart_lung_score": null,           //心肺考试总分
+                "bowel_score": null,                //心电图考试总分
+                "touch_score": null,                //腹部触诊考试总分
+                "theory_passscore": "100",          //理论考试及格分数
+                "heart_lung_passscore": null,       //心肺考试及格分数
+                "bowel_passscore": null,            //心电图考试及格分数
+                "touch_passscore": null,            //腹部触诊考试及格分数
+                "theory_examtime": "60",            //理论考试考试时长
+                "heart_lung_examtime": null,        //心肺考试考试时长
+                "bowel_examtime": null,             //心电图考试考试时长
+                "touch_examtime": null              //腹部触诊考试考试时长
+            },
+            "basicdescribe": "本考场为PHPEMS系统演示考场",
+            "adduserid": "1",                       //添加人ID
+            "addusername": "peadmin",               //添加人用户名
+            "area": null,                           //考试区域
+            "address": null,                        //考试地址
+            "open_num": "1"                         //考试总人数
+        }
+    ]
+
+根据学生用户名获取所有考试：
+请求地址
+index.php?bodyapi-app-bodycheck-getExamByUser
+参数： user_name : 学生登录用户名
+    [
+            {
+                "basicid": "1",             //考试ID
+                "basic": "演示考场",         //考试名称
+                "basicexam": {
+                    "model": "0",
+                    "changesequence": "0",
+                    "auto": "1",
+                    "autotemplate": "exampaper_paper",
+                    "self": "1",                        //理论考试考卷ID
+                    "selftemplate": "exam_paper",
+                    "heart_lung": "17",                 //心肺考试考卷ID
+                    "bowel": "",                        //心电图考试考卷ID
+                    "touch": "",                        //腹部触诊考试考卷ID
+                    "cardiogram": "",
+                    "selectrule": "0",
+                    "examnumber": "0",
+                    "notviewscore": "0",
+                    "opentime": {
+                        "start": false,
+                        "end": false
+                    },
+                    "selectrule": "0",
+                    "examnumber": "0",
+                    "notviewscore": "0",
+                    "finish_theory_num": "8",           //理论考试以考人数
+                    "finish_heartlung_num": "0",        //心肺考试已考人数
+                    "finish_bowel_num": "0",            //心电图考试已考人数
+                    "finish_touch_num": "0",            //腹部触诊已考人数
+                    "theory_score": "100",              //理论考试总分
+                    "heart_lung_score": null,           //心肺考试总分
+                    "bowel_score": null,                //心电图考试总分
+                    "touch_score": null,                //腹部触诊考试总分
+                    "theory_passscore": "100",          //理论考试及格分数
+                    "heart_lung_passscore": null,       //心肺考试及格分数
+                    "bowel_passscore": null,            //心电图考试及格分数
+                    "touch_passscore": null,            //腹部触诊考试及格分数
+                    "theory_examtime": "60",            //理论考试考试时长
+                    "heart_lung_examtime": null,        //心肺考试考试时长
+                    "bowel_examtime": null,             //心电图考试考试时长
+                    "touch_examtime": null              //腹部触诊考试考试时长
+                },
+                "basicdescribe": "本考场为PHPEMS系统演示考场",
+                "adduserid": "1",                       //添加人ID
+                "addusername": "peadmin",               //添加人用户名
+                "area": null,                           //考试区域
+                "address": null,                        //考试地址
+                "open_num": "1"                         //考试总人数
+            }
+        ]
+根据学生用户名获取当天考试：
+请求地址
+index.php?bodyapi-app-bodycheck-getExamByUserDate
+参数： user_name : 学生登录用户名
+返回
+    [
+                {
+                    "basicid": "1",             //考试ID
+                    "basic": "演示考场",         //考试名称
+                    "basicexam": {
+                        "model": "0",
+                        "changesequence": "0",
+                        "auto": "1",
+                        "autotemplate": "exampaper_paper",
+                        "self": "1",                        //理论考试考卷ID
+                        "selftemplate": "exam_paper",
+                        "heart_lung": "17",                 //心肺考试考卷ID
+                        "bowel": "",                        //心电图考试考卷ID
+                        "touch": "",                        //腹部触诊考试考卷ID
+                        "cardiogram": "",
+                        "selectrule": "0",
+                        "examnumber": "0",
+                        "notviewscore": "0",
+                        "opentime": {
+                            "start": false,
+                            "end": false
+                        },
+                        "selectrule": "0",
+                        "examnumber": "0",
+                        "notviewscore": "0",
+                        "finish_theory_num": "8",           //理论考试以考人数
+                        "finish_heartlung_num": "0",        //心肺考试已考人数
+                        "finish_bowel_num": "0",            //心电图考试已考人数
+                        "finish_touch_num": "0",            //腹部触诊已考人数
+                        "theory_score": "100",              //理论考试总分
+                        "heart_lung_score": null,           //心肺考试总分
+                        "bowel_score": null,                //心电图考试总分
+                        "touch_score": null,                //腹部触诊考试总分
+                        "theory_passscore": "100",          //理论考试及格分数
+                        "heart_lung_passscore": null,       //心肺考试及格分数
+                        "bowel_passscore": null,            //心电图考试及格分数
+                        "touch_passscore": null,            //腹部触诊考试及格分数
+                        "theory_examtime": "60",            //理论考试考试时长
+                        "heart_lung_examtime": null,        //心肺考试考试时长
+                        "bowel_examtime": null,             //心电图考试考试时长
+                        "touch_examtime": null              //腹部触诊考试考试时长
+                    },
+                    "basicdescribe": "本考场为PHPEMS系统演示考场",
+                    "adduserid": "1",                       //添加人ID
+                    "addusername": "peadmin",               //添加人用户名
+                    "area": null,                           //考试区域
+                    "address": null,                        //考试地址
+                    "open_num": "1"                         //考试总人数
+                }
+            ]
+
+根据ID获取考卷详情
+请求地址：index.php?bodyapi-app-bodycheck-getPaperInfo
+参数：paper_id 考卷ID
+返回
+    {
+        "examsessionquestion": {
+            "questions": {
+                "1": [
+                    {
+                        "questionid": "134",
+                        "questiontype": 2,
+                        "question": "",
+                        "questionuserid": 0,
+                        "questionusername": "",
+                        "questionlastmodifyuser": "",
+                        "questionselectnumber": 4,
+                        "questionanswer": "A",
+                        "questiondescribe": null,
+                        "questionknowsid": "",
+                        "questioncreatetime": "",
+                        "questionstatus": 1,
+                        "questionhtml": false,
+                        "questionparent": 0,
+                        "questionsequence": 0,
+                        "questionlevel": 1,
+                        "questionaboutfile": "p55.swf",
+                        "questionselect": "<p>A:ptfv1<-0.04mm.s,符合左心房肥大</p><p>B:ptfv1〉-0.04mm.s,符合右心房肥大</p><p>C:ptfv1<-0.04mm.s,符合右心房肥大</p><p>D:ptfv1〉-0.04mm.s,符合左心房肥大</p><p>",
+                        "questionsound": "<p>A:</p><p>B:</p><p>C:</p><p>D:</p><p>"
+                    },
+                    {
+                        "questionid": "135",
+                        "questiontype": 2,
+                        "question": "",
+                        "questionuserid": 0,
+                        "questionusername": "",
+                        "questionlastmodifyuser": "",
+                        "questionselectnumber": 4,
+                        "questionanswer": "C",
+                        "questiondescribe": null,
+                        "questionknowsid": "",
+                        "questioncreatetime": "",
+                        "questionstatus": 1,
+                        "questionhtml": false,
+                        "questionparent": 0,
+                        "questionsequence": 0,
+                        "questionlevel": 1,
+                        "questionaboutfile": "p57.swf",
+                        "questionselect": "<p>A:左心房肥大</p><p>B:右心房肥大</p><p>C:双心房肥大</p><p>D:左心房正常</p><p>",
+                        "questionsound": "<p>A:</p><p>B:</p><p>C:</p><p>D:</p><p>"
+                    },
+                    {
+                        "questionid": "136",
+                        "questiontype": 2,
+                        "question": "",
+                        "questionuserid": 0,
+                        "questionusername": "",
+                        "questionlastmodifyuser": "",
+                        "questionselectnumber": 4,
+                        "questionanswer": "C",
+                        "questiondescribe": null,
+                        "questionknowsid": "",
+                        "questioncreatetime": "",
+                        "questionstatus": 1,
+                        "questionhtml": false,
+                        "questionparent": 0,
+                        "questionsequence": 0,
+                        "questionlevel": 1,
+                        "questionaboutfile": "p59.swf",
+                        "questionselect": "<p>A:右心室肥大，心电轴右偏</p><p>B:右心室肥大伴心电轴左偏</p><p>C:左心室肥大伴心电轴左偏</p><p>D:左心室肥大伴心电轴右偏</p><p>",
+                        "questionsound": "<p>A:</p><p>B:</p><p>C:</p><p>D:</p><p>"
+                    }
+                ]
+            },
+            "questionrows": []
+        },
+        "examsessionsetting": {
+            "examid": "24",
+            "examsubject": "0",
+            "exam": "心电图",
+            "examsetting": {
+                "examtime": "60",
+                "score": "100",
+                "passscore": "60",
+                "questypelite": {
+                    "1": "1"
+                },
+                "questype": {
+                    "1": {
+                        "describe": "",
+                        "score": "2"
+                    }
+                }
+            },
+            "examquestions": {
+                "1": {
+                    "questions": ",136,135,134,",
+                    "rowsquestions": ""
+                }
+            },
+            "examscore": "",
+            "examstatus": "0",
+            "examtype": "2",
+            "examauthorid": "1",
+            "examauthor": "peadmin",
+            "examtime": "1512541819",
+            "examkeyword": "",
+            "examdecide": "1",
+            "question_type": "2",
+            "organ_type": "4"
+        },
+        "examsessionstarttime": 1512544958,
+        "examsession": "心电图",
+        "examsessionscore": 0,
+        "examsessiontime": "60",
+        "examsessiontype": 2,
+        "examsessionkey": "24",
+        "examsessionissave": 0
+    }
+
+//
+
+
+学生是否可以考试
+请求地址：index.php?bodyapi-app-bodycheck-userExam
+参数
+    user_name: 学生用户名
+    exam_id:   考试ID
+返回
+    true，false
+
+
+根据考试ID获取考试详情
+请求地址： index.php?bodyapi-app-bodycheck-getExamInfoById
+参数
+    exam_id: 考试ID
+返回
+    [
+        {
+            "basicid": "76",
+            "basic": "创伤急救",
+            "basicexam": {
+                "model": "0",
+                "changesequence": "0",
+                "auto": "4",
+                "autotemplate": "exampaper_paper",
+                "self": "4",
+                "selftemplate": "exam_paper",
+                "opentime": {
+                    "start": false,
+                    "end": false
+                },
+                "selectrule": "1",
+                "examnumber": "0",
+                "notviewscore": "0",
+                "finish_theory_num": "2",
+                "finish_heartlung_num": "0",
+                "finish_bowel_num": "0",
+                "finish_touch_num": "0",
+                "theory_score": "100",
+                "heart_lung_score": null,
+                "bowel_score": null,
+                "touch_score": null,
+                "theory_passscore": "60",
+                "heart_lung_passscore": null,
+                "bowel_passscore": null,
+                "touch_passscore": null,
+                "theory_examtime": "60",
+                "heart_lung_examtime": null,
+                "bowel_examtime": null,
+                "touch_examtime": null
+            },
+            "basicdescribe": "简介",
+            "adduserid": "1",
+            "addusername": "peadmin",
+            "area": null,
+            "address": null,
+            "open_num": "8"
+        }
+    ]
+
+某场考试学员列表
+请求地址：index.php?bodyapi-app-bodycheck-getExamUsers
+参数
+    exam_id: 考试ID
+返回
+    [
+        {
+            "userid": "4",
+            "username": "15021464551",
+            "usertruename": "赵岩"
+        },
+        {
+            "userid": "5",
+            "username": "15021464552",
+            "usertruename": "李俊"
+        },
+        {
+            "userid": "6",
+            "username": "15021464553",
+            "usertruename": "测试用的"
+        },
+        {
+            "userid": "7",
+            "username": "15021464554",
+            "usertruename": "测试1"
+        },
+        {
+            "userid": "8",
+            "username": "15021464555",
+            "usertruename": "测试2"
+        },
+        {
+            "userid": "9",
+            "username": "15021464556",
+            "usertruename": "测试4"
+        },
+        {
+            "userid": "10",
+            "username": "15021464557",
+            "usertruename": "测试5"
+        },
+        {
+            "userid": "13",
+            "username": "15021564558",
+            "usertruename": "赵岩1"
+        },
+        {
+            "userid": "59",
+            "username": "15800000000",
+            "usertruename": "小文"
+        }
+    ]
+
+随机获取心肺音试题
+请求地址：index.php?bodyapi-app-bodycheck-getOptQuestionRandom
+参数： organ_type: 试题所属分类 0:心音 1:肺音  num:题目数量
+返回：
+    {
+        "status": 1,                            //1：正确   0：错误 错误时 有error_message 错误提示
+        "questions": [
+            {
+                "opt_question_id": "18",        // 题目ID
+                "organ_type": "0",              // 试题所属分类 0:心音 1:肺音
+                "right_item": "D",              // 正确项目
+                "opt_questin_memo": "",         // 备注/试题说明
+                "add_name": "admin",            //试题添加人
+                "addtime": "",                  // 添加时间
+                "about_file": "",
+                "sound_name": "126.wav",        // 播放声音
+                "itmes": [
+                    {
+                        "opt_question_sound_id": "269",
+                        "opt_question_id": "18",
+                        "case_id": "23",
+                        "item_title": "D",
+                        "item_content": "S2反常分裂",
+                        "if_right": "1"
+                    },
+                    {
+                        "opt_question_sound_id": "268",
+                        "opt_question_id": "18",
+                        "case_id": "2",
+                        "item_title": "C",
+                        "item_content": "S1分裂",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "267",
+                        "opt_question_id": "18",
+                        "case_id": "0",
+                        "item_title": "B",
+                        "item_content": "固定分裂",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "266",
+                        "opt_question_id": "18",
+                        "case_id": "29",
+                        "item_title": "A",
+                        "item_content": "开瓣音",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "270",
+                        "opt_question_id": "18",
+                        "case_id": "32",
+                        "item_title": "E",
+                        "item_content": "S2生理性分裂",
+                        "if_right": "0"
+                    }
+                ]
+            },
+            {
+                "opt_question_id": "31",
+                "organ_type": "0",
+                "right_item": "B",
+                "opt_questin_memo": "",
+                "add_name": "admin",
+                "addtime": "",
+                "about_file": "",
+                "sound_name": "142.wav",
+                "itmes": [
+                    {
+                        "opt_question_sound_id": "464",
+                        "opt_question_id": "31",
+                        "case_id": "81",
+                        "item_title": "D",
+                        "item_content": "房颤",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "462",
+                        "opt_question_id": "31",
+                        "case_id": "17",
+                        "item_title": "B",
+                        "item_content": "二尖瓣关闭不全并房颤",
+                        "if_right": "1"
+                    },
+                    {
+                        "opt_question_sound_id": "463",
+                        "opt_question_id": "31",
+                        "case_id": "19",
+                        "item_title": "C",
+                        "item_content": "二尖瓣狭窄",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "461",
+                        "opt_question_id": "31",
+                        "case_id": "16",
+                        "item_title": "A",
+                        "item_content": "二尖瓣关闭不全",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "465",
+                        "opt_question_id": "31",
+                        "case_id": "15",
+                        "item_title": "E",
+                        "item_content": "窦性心律不齐",
+                        "if_right": "0"
+                    }
+                ]
+            },
+            {
+                "opt_question_id": "32",
+                "organ_type": "0",
+                "right_item": "E",
+                "opt_questin_memo": "",
+                "add_name": "admin",
+                "addtime": "",
+                "about_file": "",
+                "sound_name": "143.wav",
+                "itmes": [
+                    {
+                        "opt_question_sound_id": "478",
+                        "opt_question_id": "32",
+                        "case_id": "19",
+                        "item_title": "C",
+                        "item_content": "二尖瓣狭窄",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "477",
+                        "opt_question_id": "32",
+                        "case_id": "0",
+                        "item_title": "B",
+                        "item_content": "三尖瓣狭窄",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "476",
+                        "opt_question_id": "32",
+                        "case_id": "16",
+                        "item_title": "A",
+                        "item_content": "二尖瓣关闭不全",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "479",
+                        "opt_question_id": "32",
+                        "case_id": "12",
+                        "item_title": "D",
+                        "item_content": "动脉导管未闭",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "480",
+                        "opt_question_id": "32",
+                        "case_id": "41",
+                        "item_title": "E",
+                        "item_content": "相对性三尖瓣关闭不全",
+                        "if_right": "1"
+                    }
+                ]
+            },
+            {
+                "opt_question_id": "30",
+                "organ_type": "0",
+                "right_item": "C",
+                "opt_questin_memo": "",
+                "add_name": "admin",
+                "addtime": "",
+                "about_file": "",
+                "sound_name": "141.wav",
+                "itmes": [
+                    {
+                        "opt_question_sound_id": "448",
+                        "opt_question_id": "30",
+                        "case_id": "16",
+                        "item_title": "C",
+                        "item_content": "二尖瓣关闭不全",
+                        "if_right": "1"
+                    },
+                    {
+                        "opt_question_sound_id": "447",
+                        "opt_question_id": "30",
+                        "case_id": "18",
+                        "item_title": "B",
+                        "item_content": "二尖瓣脱垂综合征",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "446",
+                        "opt_question_id": "30",
+                        "case_id": "36",
+                        "item_title": "A",
+                        "item_content": "收缩中﹑晚期喀喇音",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "449",
+                        "opt_question_id": "30",
+                        "case_id": "19",
+                        "item_title": "D",
+                        "item_content": "二尖瓣狭窄",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "450",
+                        "opt_question_id": "30",
+                        "case_id": "0",
+                        "item_title": "E",
+                        "item_content": "三尖瓣关闭不全",
+                        "if_right": "0"
+                    }
+                ]
+            },
+            {
+                "opt_question_id": "40",
+                "organ_type": "0",
+                "right_item": "B",
+                "opt_questin_memo": "",
+                "add_name": "admin",
+                "addtime": "",
+                "about_file": "",
+                "sound_name": "154.wav",
+                "itmes": [
+                    {
+                        "opt_question_sound_id": "598",
+                        "opt_question_id": "40",
+                        "case_id": "16",
+                        "item_title": "C",
+                        "item_content": "二尖瓣关闭不全",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "597",
+                        "opt_question_id": "40",
+                        "case_id": "19",
+                        "item_title": "B",
+                        "item_content": "二尖瓣狭窄",
+                        "if_right": "1"
+                    },
+                    {
+                        "opt_question_sound_id": "596",
+                        "opt_question_id": "40",
+                        "case_id": "0",
+                        "item_title": "A",
+                        "item_content": "三尖瓣关闭不全",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "599",
+                        "opt_question_id": "40",
+                        "case_id": "0",
+                        "item_title": "D",
+                        "item_content": "三尖瓣狭窄",
+                        "if_right": "0"
+                    },
+                    {
+                        "opt_question_sound_id": "600",
+                        "opt_question_id": "40",
+                        "case_id": "18",
+                        "item_title": "E",
+                        "item_content": "二尖瓣脱垂综合征",
+                        "if_right": "0"
+                    }
+                ]
+            }
+        ]
+    }
+
+提交答案
+请求地址 index.php?bodyapi-app-bodycheck-submitExamAnwser
+
+创建单元考试
+请求地址 index.php?bodyapi-app-bodycheck-addUnitTest
+返回 插入考试 id
+
+根据分类获取考卷
+请求地址 index.php?bodyapi-app-bodycheck-getAllUnitTestPaperByType
+请求参数 type 0：理论  1：心肺音  2：腹部触诊  4：心电图
+返回
+
+更改用户密码
+请求地址 index.php?bodyapi-app-bodycheck-updatePassword
+请求参数 user_name 用户名 password 密码
+返回 成功 失败

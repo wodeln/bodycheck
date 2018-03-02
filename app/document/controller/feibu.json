@@ -1,0 +1,33 @@
+{
+  "user_id": 21,
+  "total_amount": "8027.00",
+  "coupon_price": "0.00",
+  "order_prom_amount": "0.00",
+  "shipping_price": "112.00",
+  "order_id": 3930,
+  "add_time": 1510233369,
+  "consignee": "\u751c\u871c\u98df\u5ba2\u5357\u7fd4\u5fb7\u534e\u8def\u5e97",
+  "mobile": "17621467434",
+  "address": "\u4e0a\u6d77\u5e02\u5609\u5b9a\u533a\u5357\u7fd4\u9547\u5fb7\u534e\u8def616\u53f7",
+  "city": "\u5e02\u8f96\u533a",
+  "district": "\u5609\u5b9a\u533a",
+  "twon": null,
+  "order_sn": "201711092116093066",
+  "products": [
+    {
+      "goods_num": 50,
+      "goods_price": "131.00",
+      "goods_id": 9
+    },
+    {
+      "goods_num": 5,
+      "goods_price": "235.00",
+      "goods_id": 2
+    },
+    {
+      "goods_num": 1,
+      "goods_price": "190.00",
+      "goods_id": 14
+    }
+  ]
+}

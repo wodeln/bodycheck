@@ -1,0 +1,3381 @@
+{
+  "CoursewareList": {
+    "Courseware": [
+      {
+        "Name": "腹部触诊",
+        "NetID": "2",
+        "Type": "2",
+        "TreeDir": "/腹部触诊",
+        "Courseware": [
+          {
+            "Name": "基础知识",
+            "NetID": "48040",
+            "Type": "2",
+            "TreeDir": "/腹部触诊/基础知识",
+            "Courseware": [
+              {
+                "Name": "腹部体表标志",
+                "TreeDir": "/腹部触诊/基础知识/腹部体表标志",
+                "Flash": "腹部体表标志.swf",
+                "NetID": "48051",
+                "CaseId": "0",
+                "Type": "2",
+                "defalut_sound": ""
+              },
+              {
+                "Name": "腹部分区",
+                "TreeDir": "/腹部触诊/基础知识/腹部分区",
+                "Flash": "腹部体表分区.swf",
+                "NetID": "48052",
+                "CaseId": "0",
+                "Type": "2",
+                "defalut_sound": ""
+              },
+              {
+                "Name": "腹部触诊方法",
+                "TreeDir": "/腹部触诊/基础知识/腹部触诊方法",
+                "Flash": "腹部触诊方法.swf",
+                "NetID": "48053",
+                "CaseId": "0",
+                "Type": "2",
+                "defalut_sound": ""
+              },
+              {
+                "Name": "腹部触诊注意事项",
+                "TreeDir": "/腹部触诊/基础知识/腹部触诊注意事项",
+                "Flash": "腹部触诊注意事项.swf",
+                "NetID": "48054",
+                "CaseId": "0",
+                "Type": "2",
+                "defalut_sound": ""
+              }
+            ]
+          },
+          {
+            "Name": "腹部触诊内容",
+            "NetID": "48041",
+            "Type": "2",
+            "TreeDir": "/腹部触诊/腹部触诊内容",
+            "Courseware": [
+              {
+                "Name": "脏器触诊",
+                "NetID": "48057",
+                "Type": "2",
+                "TreeDir": "/腹部触诊/腹部触诊内容/脏器触诊",
+                "Courseware": [
+                  {
+                    "Name": "特性与听诊要点",
+                    "NetID": "48126",
+                    "Type": "0",
+                    "TreeDir": "/腹部触诊/腹部触诊内容/脏器触诊/特性与听诊要点",
+                    "Flash": "杂音的特性与听诊要点.swf",
+                    "defalut_sound": "",
+                    "Courseware": [
+                      {
+                        "Name": "最响部位和传导方向",
+                        "TreeDir": "/心脏课件/心脏听诊/杂音/特性与听诊要点/最响部位和传导方向",
+                        "Flash": "最响部位和传导方向.swf",
+                        "NetID": "48222",
+                        "CaseId": "0",
+                        "Type": "0",
+                        "defalut_sound": ""
+                      },
+                      {
+                        "Name": "心动周期中的时期",
+                        "TreeDir": "/心脏课件/心脏听诊/杂音/特性与听诊要点/心动周期中的时期",
+                        "Flash": "心动周期中的时期.swf",
+                        "NetID": "48223",
+                        "CaseId": "0",
+                        "Type": "0",
+                        "defalut_sound": ""
+                      },
+                      {
+                        "Name": "性质",
+                        "TreeDir": "/心脏课件/心脏听诊/杂音/特性与听诊要点/性质",
+                        "Flash": "性质.swf",
+                        "NetID": "48224",
+                        "CaseId": "0",
+                        "Type": "0",
+                        "defalut_sound": ""
+                      },
+                      {
+                        "Name": "强度与形态",
+                        "TreeDir": "/心脏课件/心脏听诊/杂音/特性与听诊要点/强度与形态",
+                        "Flash": "强度与形态.swf",
+                        "NetID": "48225",
+                        "CaseId": "0",
+                        "Type": "0",
+                        "defalut_sound": ""
+                      },
+                      {
+                        "Name": "体位、呼吸和运动对杂音的影响",
+                        "TreeDir": "/心脏课件/心脏听诊/杂音/特性与听诊要点/体位、呼吸和运动对杂音的影响",
+                        "Flash": "体位呼吸和运动对杂音的影响.swf",
+                        "NetID": "48226",
+                        "CaseId": "0",
+                        "Type": "0",
+                        "defalut_sound": ""
+                      }
+                    ]
+                  },
+                  {
+                    "Name": "临床意义",
+                    "NetID": "48127",
+                    "Type": "0",
+                    "TreeDir": "/腹部触诊/腹部触诊内容/脏器触诊/临床意义",
+                    "Flash": "杂音的临床意义.swf",
+                    "defalut_sound": "",
+                    "Courseware": [
+                      {
+                        "Name": "收缩期杂音",
+                        "NetID": "48225",
+                        "Type": "0",
+                        "TreeDir": "/腹部触诊/腹部触诊内容/脏器触诊/临床意义/收缩期杂音",
+                        "Flash": "收缩期杂音.swf",
+                        "defalut_sound": "",
+                        "Courseware": [
+                          {
+                            "Name": "肺动脉瓣区",
+                            "NetID": "48317",
+                            "Type": "0",
+                            "TreeDir": "/腹部触诊/腹部触诊内容/脏器触诊/临床意义/收缩期杂音/肺动脉瓣区",
+                            "Flash": "肺动脉瓣区.swf",
+                            "default_sound": "",
+                            "Courseware": [
+                              {
+                                "Name": "先天性肺动脉瓣狭窄",
+                                "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/收缩期杂音/肺动脉瓣区/先天性肺动脉瓣狭窄",
+                                "Flash": "先天性肺动脉瓣狭窄.swf",
+                                "NetID": "48404",
+                                "CaseId": "34",
+                                "Type": "0",
+                                "default_sound": "146.wav",
+                                "sound_list": [
+                                  {
+                                    "sound_file": "146.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "2",
+                                        "volume": "93"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "7.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "26",
+                                        "volume": "90"
+                                      },
+                                      {
+                                        "position": "35",
+                                        "volume": "90"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "1.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "14",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "15",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "16",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "18",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "19",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "20",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "21",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "22",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "23",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "24",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "25",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "29",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "30",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "31",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "32",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "33",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "34",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "37",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "38",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "39",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "40",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "41",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "43",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "44",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "45",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "46",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "47",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "48",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "49",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "50",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "51",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "4.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "7",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "8",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "9",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "17",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "27",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "28",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "36",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "42",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "tremble_position": "46"
+                              },
+                              {
+                                "Name": "房间隔缺损",
+                                "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/收缩期杂音/肺动脉瓣区/房间隔缺损",
+                                "Flash": "房间隔缺损.swf",
+                                "NetID": "48405",
+                                "CaseId": "32",
+                                "Type": "0",
+                                "default_sound": "150.wav",
+                                "sound_list": [
+                                  {
+                                    "sound_file": "150.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "4",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "6",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "7.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "26",
+                                        "volume": "90"
+                                      },
+                                      {
+                                        "position": "35",
+                                        "volume": "90"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "1.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "14",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "15",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "16",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "18",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "19",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "20",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "21",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "22",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "23",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "24",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "25",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "29",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "30",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "31",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "32",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "33",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "34",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "37",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "38",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "39",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "40",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "41",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "43",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "44",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "45",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "46",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "47",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "48",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "49",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "50",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "51",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "4.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "7",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "8",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "9",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "17",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "27",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "28",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "36",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "42",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "tremble_position": "50"
+                              },
+                              {
+                                "Name": "法洛四联症",
+                                "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/收缩期杂音/肺动脉瓣区/法洛四联症",
+                                "Flash": "法洛四联症.swf",
+                                "NetID": "48406",
+                                "CaseId": "31",
+                                "Type": "0",
+                                "default_sound": "149.wav",
+                                "sound_list": [
+                                  {
+                                    "sound_file": "149.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "2",
+                                        "volume": "93"
+                                      },
+                                      {
+                                        "position": "4",
+                                        "volume": "93"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "7.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "26",
+                                        "volume": "90"
+                                      },
+                                      {
+                                        "position": "35",
+                                        "volume": "90"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "1.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "14",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "15",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "16",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "18",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "19",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "20",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "21",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "22",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "23",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "24",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "25",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "29",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "30",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "31",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "32",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "33",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "34",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "37",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "38",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "39",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "40",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "41",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "43",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "44",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "45",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "46",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "47",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "48",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "49",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "50",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "51",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "4.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "7",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "8",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "9",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "17",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "27",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "28",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "36",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "42",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "tremble_position": "0"
+                              }
+                            ]
+                          },
+                          {
+                            "Name": "胸骨左缘三﹑四肋间",
+                            "NetID": "48318",
+                            "Type": "0",
+                            "TreeDir": "/腹部触诊/腹部触诊内容/脏器触诊/临床意义/收缩期杂音/胸骨左缘三﹑四肋间",
+                            "Flash": "胸骨左缘三四肋间.swf",
+                            "default_sound": "",
+                            "Courseware": [
+                              {
+                                "Name": "室间隔缺损",
+                                "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/收缩期杂音/胸骨左缘三﹑四肋间/室间隔缺损",
+                                "Flash": "室间隔缺损.swf",
+                                "NetID": "48407",
+                                "CaseId": "30",
+                                "Type": "0",
+                                "default_sound": "150.wav",
+                                "sound_list": [
+                                  {
+                                    "sound_file": "150.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "4",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "6",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "7.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "26",
+                                        "volume": "90"
+                                      },
+                                      {
+                                        "position": "35",
+                                        "volume": "90"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "1.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "14",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "15",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "16",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "18",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "19",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "20",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "21",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "22",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "23",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "24",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "25",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "29",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "30",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "31",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "32",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "33",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "34",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "37",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "38",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "39",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "40",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "41",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "43",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "44",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "45",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "46",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "47",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "48",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "49",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "50",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "51",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "4.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "7",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "8",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "9",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "17",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "27",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "28",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "36",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "42",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "tremble_position": "50"
+                              },
+                              {
+                                "Name": "室间隔穿孔",
+                                "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/收缩期杂音/胸骨左缘三﹑四肋间/室间隔穿孔",
+                                "Flash": "室间隔穿孔.swf",
+                                "NetID": "48408",
+                                "CaseId": "29",
+                                "Type": "0",
+                                "default_sound": "151.wav",
+                                "sound_list": [
+                                  {
+                                    "sound_file": "151.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "4",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "6",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "7.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "26",
+                                        "volume": "90"
+                                      },
+                                      {
+                                        "position": "35",
+                                        "volume": "90"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "1.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "14",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "15",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "16",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "18",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "19",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "20",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "21",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "22",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "23",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "24",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "25",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "29",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "30",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "31",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "32",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "33",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "34",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "37",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "38",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "39",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "40",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "41",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "43",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "44",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "45",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "46",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "47",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "48",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "49",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "50",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "51",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "4.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "7",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "8",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "9",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "17",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "27",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "28",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "36",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "42",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "tremble_position": "51"
+                              },
+                              {
+                                "Name": "肥厚型梗阻性心肌病",
+                                "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/收缩期杂音/胸骨左缘三﹑四肋间/肥厚型梗阻性心肌病",
+                                "Flash": "肥厚型梗阻性心肌病.swf",
+                                "NetID": "48409",
+                                "CaseId": "28",
+                                "Type": "0",
+                                "default_sound": "152.wav",
+                                "sound_list": [
+                                  {
+                                    "sound_file": "152.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "4",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "6",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "7.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "26",
+                                        "volume": "90"
+                                      },
+                                      {
+                                        "position": "35",
+                                        "volume": "90"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "1.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "14",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "15",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "16",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "18",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "19",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "20",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "21",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "22",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "23",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "24",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "25",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "29",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "30",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "31",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "32",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "33",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "34",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "37",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "38",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "39",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "40",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "41",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "43",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "44",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "45",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "46",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "47",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "48",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "49",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "50",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "51",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "4.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "7",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "8",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "9",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "17",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "27",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "28",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "36",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "42",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "tremble_position": "52"
+                              }
+                            ]
+                          },
+                          {
+                            "Name": "二尖瓣区",
+                            "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/收缩期杂音/二尖瓣区",
+                            "Flash": "二尖瓣区(收缩期).swf",
+                            "NetID": "48314",
+                            "CaseId": "39",
+                            "Type": "0",
+                            "default_sound": "141.wav",
+                            "sound_list": [
+                              {
+                                "sound_file": "141.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "1",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "12",
+                                    "volume": "97"
+                                  },
+                                  {
+                                    "position": "13",
+                                    "volume": "93"
+                                  },
+                                  {
+                                    "position": "14",
+                                    "volume": "90"
+                                  },
+                                  {
+                                    "position": "15",
+                                    "volume": "85"
+                                  },
+                                  {
+                                    "position": "16",
+                                    "volume": "81"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "7.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "26",
+                                    "volume": "90"
+                                  },
+                                  {
+                                    "position": "35",
+                                    "volume": "90"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "1.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "14",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "15",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "16",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "18",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "19",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "20",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "21",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "22",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "23",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "24",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "25",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "29",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "30",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "31",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "32",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "33",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "34",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "37",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "38",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "39",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "40",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "41",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "43",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "44",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "45",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "46",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "47",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "48",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "49",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "50",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "51",
+                                    "volume": "100"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "4.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "7",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "8",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "9",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "17",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "27",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "28",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "36",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "42",
+                                    "volume": "100"
+                                  }
+                                ]
+                              }
+                            ],
+                            "tremble_position": "0"
+                          },
+                          {
+                            "Name": "三尖瓣区",
+                            "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/收缩期杂音/三尖瓣区",
+                            "Flash": "三尖瓣区(收缩).swf",
+                            "NetID": "48315",
+                            "CaseId": "37",
+                            "Type": "0",
+                            "default_sound": "143.wav",
+                            "sound_list": [
+                              {
+                                "sound_file": "143.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "5",
+                                    "volume": "95"
+                                  },
+                                  {
+                                    "position": "6",
+                                    "volume": "95"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "7.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "26",
+                                    "volume": "90"
+                                  },
+                                  {
+                                    "position": "35",
+                                    "volume": "90"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "1.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "14",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "15",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "16",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "18",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "19",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "20",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "21",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "22",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "23",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "24",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "25",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "29",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "30",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "31",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "32",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "33",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "34",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "37",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "38",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "39",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "40",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "41",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "43",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "44",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "45",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "46",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "47",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "48",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "49",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "50",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "51",
+                                    "volume": "100"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "4.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "7",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "8",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "9",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "17",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "27",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "28",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "36",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "42",
+                                    "volume": "100"
+                                  }
+                                ]
+                              }
+                            ],
+                            "tremble_position": "0"
+                          },
+                          {
+                            "Name": "主动脉瓣区",
+                            "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/收缩期杂音/主动脉瓣区",
+                            "Flash": "主动脉瓣区(收缩期).swf",
+                            "NetID": "48316",
+                            "CaseId": "36",
+                            "Type": "0",
+                            "default_sound": "144.wav",
+                            "sound_list": [
+                              {
+                                "sound_file": "144.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "3",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "7",
+                                    "volume": "97"
+                                  },
+                                  {
+                                    "position": "8",
+                                    "volume": "93"
+                                  },
+                                  {
+                                    "position": "9",
+                                    "volume": "90"
+                                  },
+                                  {
+                                    "position": "10",
+                                    "volume": "85"
+                                  },
+                                  {
+                                    "position": "11",
+                                    "volume": "78"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "7.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "26",
+                                    "volume": "90"
+                                  },
+                                  {
+                                    "position": "35",
+                                    "volume": "90"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "1.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "14",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "15",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "16",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "18",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "19",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "20",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "21",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "22",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "23",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "24",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "25",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "29",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "30",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "31",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "32",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "33",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "34",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "37",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "38",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "39",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "40",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "41",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "43",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "44",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "45",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "46",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "47",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "48",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "49",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "50",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "51",
+                                    "volume": "100"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "4.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "7",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "8",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "9",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "17",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "27",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "28",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "36",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "42",
+                                    "volume": "100"
+                                  }
+                                ]
+                              }
+                            ],
+                            "tremble_position": "44"
+                          },
+                          {
+                            "Name": "生理性杂音",
+                            "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/收缩期杂音/生理性杂音",
+                            "Flash": "生理性杂音.swf",
+                            "NetID": "48319",
+                            "CaseId": "27",
+                            "Type": "0",
+                            "default_sound": "153.wav",
+                            "sound_list": [
+                              {
+                                "sound_file": "153.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "2",
+                                    "volume": "95"
+                                  },
+                                  {
+                                    "position": "4",
+                                    "volume": "95"
+                                  },
+                                  {
+                                    "position": "6",
+                                    "volume": "95"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "7.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "26",
+                                    "volume": "90"
+                                  },
+                                  {
+                                    "position": "35",
+                                    "volume": "90"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "1.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "14",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "15",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "16",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "18",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "19",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "20",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "21",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "22",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "23",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "24",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "25",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "29",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "30",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "31",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "32",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "33",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "34",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "37",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "38",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "39",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "40",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "41",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "43",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "44",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "45",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "46",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "47",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "48",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "49",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "50",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "51",
+                                    "volume": "100"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "4.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "7",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "8",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "9",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "17",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "27",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "28",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "36",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "42",
+                                    "volume": "100"
+                                  }
+                                ]
+                              }
+                            ],
+                            "tremble_position": "0"
+                          }
+                        ]
+                      },
+                      {
+                        "Name": "舒张期杂音",
+                        "NetID": "48226",
+                        "Type": "0",
+                        "TreeDir": "/腹部触诊/腹部触诊内容/脏器触诊/临床意义/舒张期杂音",
+                        "Flash": "舒张期杂音.swf",
+                        "defalut_sound": "",
+                        "Courseware": [
+                          {
+                            "Name": "二尖瓣区",
+                            "NetID": "48320",
+                            "Type": "0",
+                            "TreeDir": "/腹部触诊/腹部触诊内容/脏器触诊/临床意义/舒张期杂音/二尖瓣区",
+                            "Flash": "二尖瓣区(舒张).swf",
+                            "default_sound": "",
+                            "Courseware": [
+                              {
+                                "Name": "器质性二尖瓣狭窄",
+                                "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/舒张期杂音/二尖瓣区/器质性二尖瓣狭窄",
+                                "Flash": "器质性二尖瓣狭窄.swf",
+                                "NetID": "48410",
+                                "CaseId": "25",
+                                "Type": "0",
+                                "default_sound": "154.wav",
+                                "sound_list": [
+                                  {
+                                    "sound_file": "154.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "1",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "1113.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "3",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "4",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "118.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "2",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "tremble_position": "54"
+                              },
+                              {
+                                "Name": "相对性二尖瓣狭窄",
+                                "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/舒张期杂音/二尖瓣区/相对性二尖瓣狭窄",
+                                "Flash": "相对性二尖瓣狭窄.swf",
+                                "NetID": "48411",
+                                "CaseId": "24",
+                                "Type": "0",
+                                "default_sound": "156.wav",
+                                "sound_list": [
+                                  {
+                                    "sound_file": "156.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "1",
+                                        "volume": "90"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "7.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "26",
+                                        "volume": "90"
+                                      },
+                                      {
+                                        "position": "35",
+                                        "volume": "90"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "1.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "14",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "15",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "16",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "18",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "19",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "20",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "21",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "22",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "23",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "24",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "25",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "29",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "30",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "31",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "32",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "33",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "34",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "37",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "38",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "39",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "40",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "41",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "43",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "44",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "45",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "46",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "47",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "48",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "49",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "50",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "51",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "4.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "7",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "8",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "9",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "17",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "27",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "28",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "36",
+                                        "volume": "100"
+                                      },
+                                      {
+                                        "position": "42",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "tremble_position": "0"
+                              }
+                            ]
+                          },
+                          {
+                            "Name": "主动脉瓣区",
+                            "NetID": "48322",
+                            "Type": "0",
+                            "TreeDir": "/腹部触诊/腹部触诊内容/脏器触诊/临床意义/舒张期杂音/主动脉瓣区",
+                            "Flash": "主动脉瓣区(舒张).swf",
+                            "default_sound": "",
+                            "Courseware": [
+                              {
+                                "Name": "主动脉瓣关闭不全",
+                                "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/舒张期杂音/主动脉瓣区/主动脉瓣关闭不全",
+                                "Flash": "主动脉瓣关闭不全.swf",
+                                "NetID": "48412",
+                                "CaseId": "22",
+                                "Type": "0",
+                                "default_sound": "1106.wav",
+                                "sound_list": [
+                                  {
+                                    "sound_file": "1106.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "4",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "主动脉瓣听诊区.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "3",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "sound_file": "心尖部.wav",
+                                    "is_heart": "0",
+                                    "position_list": [
+                                      {
+                                        "position": "1",
+                                        "volume": "100"
+                                      }
+                                    ]
+                                  }
+                                ],
+                                "tremble_position": "0"
+                              },
+                              {
+                                "Name": "主动脉瓣钙化",
+                                "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/舒张期杂音/主动脉瓣区/主动脉瓣钙化",
+                                "Flash": "主动脉瓣钙化.swf",
+                                "NetID": "48413",
+                                "CaseId": "0",
+                                "Type": "0",
+                                "default_sound": ""
+                              },
+                              {
+                                "Name": "主动脉瓣赘生物",
+                                "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/舒张期杂音/主动脉瓣区/主动脉瓣赘生物",
+                                "Flash": "主动脉瓣赘生物.swf",
+                                "NetID": "48414",
+                                "CaseId": "0",
+                                "Type": "0",
+                                "default_sound": ""
+                              }
+                            ]
+                          },
+                          {
+                            "Name": "三尖瓣区",
+                            "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/舒张期杂音/三尖瓣区",
+                            "Flash": "房室传导阻滞.swf",
+                            "NetID": "48321",
+                            "CaseId": "23",
+                            "Type": "0",
+                            "default_sound": "157.wav",
+                            "sound_list": [
+                              {
+                                "sound_file": "157.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "5",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "6",
+                                    "volume": "100"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "7.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "26",
+                                    "volume": "90"
+                                  },
+                                  {
+                                    "position": "35",
+                                    "volume": "90"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "1.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "14",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "15",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "16",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "18",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "19",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "20",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "21",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "22",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "23",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "24",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "25",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "29",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "30",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "31",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "32",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "33",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "34",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "37",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "38",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "39",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "40",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "41",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "43",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "44",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "45",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "46",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "47",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "48",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "49",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "50",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "51",
+                                    "volume": "100"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "4.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "7",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "8",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "9",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "17",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "27",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "28",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "36",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "42",
+                                    "volume": "100"
+                                  }
+                                ]
+                              }
+                            ],
+                            "tremble_position": "0"
+                          },
+                          {
+                            "Name": "肺动脉瓣区",
+                            "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/舒张期杂音/肺动脉瓣区",
+                            "Flash": "预激综合征.swf",
+                            "NetID": "48323",
+                            "CaseId": "21",
+                            "Type": "0",
+                            "default_sound": "159.wav",
+                            "sound_list": [
+                              {
+                                "sound_file": "159.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "2",
+                                    "volume": "100"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "7.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "26",
+                                    "volume": "90"
+                                  },
+                                  {
+                                    "position": "35",
+                                    "volume": "90"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "1.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "14",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "15",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "16",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "18",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "19",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "20",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "21",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "22",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "23",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "24",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "25",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "29",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "30",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "31",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "32",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "33",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "34",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "37",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "38",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "39",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "40",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "41",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "43",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "44",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "45",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "46",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "47",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "48",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "49",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "50",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "51",
+                                    "volume": "100"
+                                  }
+                                ]
+                              },
+                              {
+                                "sound_file": "4.wav",
+                                "is_heart": "0",
+                                "position_list": [
+                                  {
+                                    "position": "7",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "8",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "9",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "17",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "27",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "28",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "36",
+                                    "volume": "100"
+                                  },
+                                  {
+                                    "position": "42",
+                                    "volume": "100"
+                                  }
+                                ]
+                              }
+                            ],
+                            "tremble_position": "0"
+                          }
+                        ]
+                      },
+                      {
+                        "Name": "连续性杂音",
+                        "TreeDir": "/心脏课件/心脏听诊/杂音/临床意义/连续性杂音",
+                        "Flash": "连续性杂音.swf",
+                        "NetID": "48229",
+                        "CaseId": "41",
+                        "Type": "0",
+                        "defalut_sound": "160.wav",
+                        "sound_list": [
+                          {
+                            "sound_file": "160.wav",
+                            "is_heart": "0",
+                            "position_list": [
+                              {
+                                "position": "2",
+                                "volume": "100"
+                              }
+                            ]
+                          },
+                          {
+                            "sound_file": "7.wav",
+                            "is_heart": "0",
+                            "position_list": [
+                              {
+                                "position": "26",
+                                "volume": "90"
+                              },
+                              {
+                                "position": "35",
+                                "volume": "90"
+                              }
+                            ]
+                          },
+                          {
+                            "sound_file": "1.wav",
+                            "is_heart": "0",
+                            "position_list": [
+                              {
+                                "position": "14",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "15",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "16",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "18",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "19",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "20",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "21",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "22",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "23",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "24",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "25",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "29",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "30",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "31",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "32",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "33",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "34",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "37",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "38",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "39",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "40",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "41",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "43",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "44",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "45",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "46",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "47",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "48",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "49",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "50",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "51",
+                                "volume": "100"
+                              }
+                            ]
+                          },
+                          {
+                            "sound_file": "4.wav",
+                            "is_heart": "0",
+                            "position_list": [
+                              {
+                                "position": "7",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "8",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "9",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "17",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "27",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "28",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "36",
+                                "volume": "100"
+                              },
+                              {
+                                "position": "42",
+                                "volume": "100"
+                              }
+                            ]
+                          }
+                        ],
+                        "tremble_position": "60"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "Name": "腹部包块",
+                "NetID": "48058",
+                "Type": "2",
+                "TreeDir": "/腹部触诊/腹部触诊内容/腹部包块",
+                "Courseware": [
+                  {
+                    "Name": "正常腹部可触到的包块",
+                    "TreeDir": "/腹部触诊/腹部触诊内容/腹部包块/正常腹部可触到的包块",
+                    "Flash": "正常腹部可触到的包块.swf",
+                    "NetID": "48803",
+                    "CaseId": "0",
+                    "Type": "2",
+                    "defalut_sound": ""
+                  },
+                  {
+                    "Name": "异常包块",
+                    "TreeDir": "/腹部触诊/腹部触诊内容/腹部包块/异常包块",
+                    "Flash": "异常包块.swf",
+                    "NetID": "48804",
+                    "CaseId": "0",
+                    "Type": "2",
+                    "defalut_sound": ""
+                  }
+                ]
+              },
+              {
+                "Name": "腹壁紧张度",
+                "TreeDir": "/腹部触诊/腹部触诊内容/腹壁紧张度",
+                "Flash": "腹壁紧张度.swf",
+                "NetID": "48055",
+                "CaseId": "0",
+                "Type": "2",
+                "defalut_sound": ""
+              },
+              {
+                "Name": "压痛及反跳痛",
+                "TreeDir": "/腹部触诊/腹部触诊内容/压痛及反跳痛",
+                "Flash": "压痛及反跳痛.swf",
+                "NetID": "48056",
+                "CaseId": "0",
+                "Type": "2",
+                "defalut_sound": ""
+              },
+              {
+                "Name": "液波震颤",
+                "TreeDir": "/腹部触诊/腹部触诊内容/液波震颤",
+                "Flash": "液波震颤.swf",
+                "NetID": "48059",
+                "CaseId": "0",
+                "Type": "2",
+                "defalut_sound": ""
+              }
+            ]
+          },
+          {
+            "Name": "乳房触诊",
+            "NetID": "48042",
+            "Type": "2",
+            "TreeDir": "/腹部触诊/乳房触诊",
+            "Courseware": [
+              {
+                "Name": "触诊方法",
+                "TreeDir": "/腹部触诊/乳房触诊/触诊方法",
+                "Flash": "(乳房)触诊方法.swf",
+                "NetID": "48060",
+                "CaseId": "0",
+                "Type": "2",
+                "defalut_sound": ""
+              },
+              {
+                "Name": "触诊内容",
+                "TreeDir": "/腹部触诊/乳房触诊/触诊内容",
+                "Flash": "(乳房)触诊内容.swf",
+                "NetID": "48061",
+                "CaseId": "0",
+                "Type": "2",
+                "defalut_sound": ""
+              },
+              {
+                "Name": "结果判定",
+                "TreeDir": "/腹部触诊/乳房触诊/结果判定",
+                "Flash": "结果判定.swf",
+                "NetID": "48062",
+                "CaseId": "0",
+                "Type": "2",
+                "defalut_sound": ""
+              }
+            ]
+          },
+          {
+            "Name": "腹部听诊",
+            "NetID": "48043",
+            "Type": "2",
+            "TreeDir": "/腹部触诊/腹部听诊",
+            "Courseware": [
+              {
+                "Name": "肠鸣音",
+                "TreeDir": "/腹部触诊/腹部听诊/肠鸣音",
+                "Flash": "肠鸣音.swf",
+                "NetID": "48064",
+                "CaseId": "175",
+                "Type": "2",
+                "defalut_sound": "肠鸣音亢进.wav",
+                "sound_list": [
+                  {
+                    "sound_file": "肠鸣音亢进.wav",
+                    "is_heart": "2",
+                    "position_list": [
+                      {
+                        "position": "54",
+                        "volume": "100"
+                      }
+                    ]
+                  }
+                ],
+                "tremble_position": "0"
+              },
+              {
+                "Name": "血管杂音",
+                "TreeDir": "/腹部触诊/腹部听诊/血管杂音",
+                "Flash": "血管杂音.swf",
+                "NetID": "48065",
+                "CaseId": "173",
+                "Type": "2",
+                "defalut_sound": "肾动脉狭窄血管杂音.wav",
+                "sound_list": [
+                  {
+                    "sound_file": "肾动脉狭窄血管杂音.wav",
+                    "is_heart": "2",
+                    "position_list": [
+                      {
+                        "position": "52",
+                        "volume": "100"
+                      },
+                      {
+                        "position": "53",
+                        "volume": "100"
+                      }
+                    ]
+                  }
+                ],
+                "tremble_position": "0"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

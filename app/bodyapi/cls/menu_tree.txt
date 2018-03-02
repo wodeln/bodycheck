@@ -1,0 +1,74 @@
+$(document).ready(function() {
+        $.ajax({
+            type: 'get',
+            url: "index.php?document-master-attachtype-echoTree",
+            dataType: "json",
+            success:function (data) {
+                var html = "";
+                for (var i=0;i<data.length;i++){
+                    var s=data[i];
+                    // console.log(s);
+                    if(s['nodes'].length>0){
+                        var sHtml="<ul>";
+                        for (var ii=0;ii<s['nodes'].length;ii++){
+                            var ss=s['nodes'][ii];
+                            if(ss['nodes'].length>0){
+                                var ssHtml="<ul>";
+                                for(var iii=0;iii<ss['nodes'].length;iii++){
+                                    var sss=ss['nodes'][iii];
+                                    if(sss['nodes'].length>0){
+                                        var sssHtml="<ul>";
+                                        for (var iiii=0;iiii<sss['nodes'].length;iiii++){
+                                            var ssss=sss['nodes'][iiii];
+                                            if(ssss['nodes'].length>0){
+                                                var ssssHtml="<ul>";
+                                                for (var iiiii=0;iiiii<ssss['nodes'].length;iiiii++){
+                                                    var sssss=ssss['nodes'][iiiii];
+                                                    if(sssss['nodes'].length>0){
+                                                        var sssssHtml="<ul>";
+                                                        for (var iiiiii=0;iiiiii<sssss['nodes'].length;iiiiii++){
+                                                            var ssssss=sssss['nodes'][iiiiii];
+                                                            if(ssssss['nodes'].length>0){
+                                                                sssssHtml+="<li><span code='"+ssssss['menu_code']+"'><i class='icon-folder-close'></i> "+ssssss['text']+"</span></li>";
+                                                            }else{
+                                                                sssssHtml+="<li><span code='"+ssssss['menu_code']+"'> "+ssssss['text']+"</span></li>";
+                                                            }
+                                                        }
+                                                        sssssHtml+="</ul>";
+                                                        ssssHtml+="<li><span code='"+sssss['menu_code']+"'><i class='icon-folder-close'></i> "+sssss['text']+"</span>"+sssssHtml+"</li>";
+                                                    }else{
+                                                        ssssHtml+="<li><span code='"+sssss['menu_code']+"'> "+sssss['text']+"</span></li>";
+                                                    }
+                                                }
+                                                ssssHtml+="</ul>";
+                                                sssHtml+="<li><span code='"+ssss['menu_code']+"'><i class='icon-folder-close'></i> "+ssss['text']+"</span>"+ssssHtml+"</li>";
+                                            }else{
+                                                sssHtml+="<li><span code='"+ssss['menu_code']+"'> "+ssss['text']+"</span></li>";
+                                            }
+                                        }
+                                        sssHtml+="</ul>";
+                                        ssHtml+="<li><span code='"+sss['menu_code']+"'><i class='icon-folder-close'></i> "+sss['text']+"</span>"+sssHtml+"</li>";
+                                    }else{
+                                        ssHtml+="<li><span code='"+sss['menu_code']+"'> "+sss['text']+"</span></li>";
+                                    }
+                                }
+                                ssHtml+="</ul>";
+                                sHtml+="<li><span code='"+ss['menu_code']+"'><i class='icon-folder-close'></i> "+ss['text']+"</span>"+ssHtml+"</li>";
+                            }else{
+                                sHtml+="<li><span code='"+ss['menu_code']+"'> "+ss['text']+"</span></li>";
+
+                            }
+                        }
+                        sHtml+="</ul>";
+                        html+="<li><span code='"+s['menu_code']+"'><i class='icon-folder-close'></i> "+s['text']+"</span>"+sHtml+"</li>"
+                    }else{
+                        html+="<li><span code='"+s['menu_code']+"'> "+s['text']+"</span></li>"
+                    }
+                }
+
+                // $(".tree_ul").html(html);
+
+                console.log(html);
+            }
+        });
+});

@@ -1,0 +1,633 @@
+{x2;if:!$userhash}
+{x2;include:header}
+<link rel="stylesheet" type="text/css" href="app/core/styles/css/style.css" />
+<body>
+{x2;include:nav}
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="main">
+			<div class="col-xs-2" style="padding-top:10px;margin-bottom:0px;">
+				{x2;include:menu}
+			</div>
+			<div class="col-xs-10" id="datacontent" style="margin: 0px;padding: 0px;">
+	{x2;endif}
+				<div class="box itembox" style="padding: 0px;">
+					<div class="tree_node pull-left" style="padding:0px;margin: 0px;">
+						<ul class="tree_ul" style="padding:0px;margin: 0px;">
+							<!--心脏听诊 begin-->
+							<li>
+
+								<span code="0"><i></i> 心脏听诊</span>
+
+								<ul>
+
+									<li>
+
+										<span code="48000" class="sun_item"><i></i> 听诊基础</span>
+										<ul>
+											<li>
+
+												<span code="48051" class="sun_item"> 心脏瓣膜听诊区</span>
+
+											</li>
+
+											<li>
+
+												<span code="48052" class="sun_item"><i></i> 心动周期与心音产生的机理</span>
+												<ul>
+													<li>
+														<span code="48111" class="sun_item"><i></i> 心动周期中心音的变化</span>
+													</li>
+												</ul>
+
+											</li>
+										</ul>
+
+									</li>
+
+									<li>
+
+										<span code="48001" class="sun_item"><i></i> 心脏听诊</span>
+										<ul>
+											<li>
+
+												<span code="48053" class="sun_item"><i></i> 心率</span>
+
+											</li>
+
+											<li>
+
+												<span code="48054" class="sun_item"><i></i> 心律</span>
+												<ul>
+													<li>
+														<span code="48116" class="sun_item"><i></i> 期前收缩</span>
+													</li>
+
+													<li>
+														<span code="48118" class="sun_item"><i></i> 强度改变</span>
+														<ul>
+															<li>
+																<span code="48209" class="sun_item"><i></i> 第一心音</span>
+															</li>
+
+															<li>
+																<span code="48210" class="sun_item"><i></i> 第二心音</span>
+																<ul>
+																	<li>
+																		<span code="48303" class="sun_item"><i></i> 第二心音增强</span>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+
+													<li>
+														<span code="48120" class="sun_item"><i></i> 心音分裂</span>
+														<ul>
+															<li>
+																<span code="48213" class="sun_item"><i></i> S2分裂</span>
+															</li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+											<li>
+												<span code="48056" class="sun_item"><i></i> 额外心音</span>
+												<ul>
+													<li>
+														<span code="48121" class="sun_item"><i></i> 舒张期额外心音</span>
+														<ul>
+															<li>
+																<span code="48214" class="sun_item"><i></i> 奔马律</span>
+															</li>
+														</ul>
+													</li>
+
+													<li>
+														<span code="48122" class="sun_item"><i></i> 收缩期额外心音</span>
+														<ul>
+															<li>
+																<span code="48218" class="sun_item"><i></i> 收缩早期喷射音</span>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+
+												<span code="48126" class="sun_item"><i></i> 杂音</span>
+												<ul>
+													<li>
+														<span code="48116" class="sun_item"><i></i> 特性与听诊要点</span>
+													</li>
+
+													<li>
+														<span code="48127" class="sun_item"><i></i> 临床意义</span>
+														<ul>
+															<li>
+																<span code="48225" class="sun_item"><i></i> 收缩期杂音</span>
+																<ul>
+																	<li>
+																		<span code="48317" class="sun_item"><i></i> 肺动脉瓣区</span>
+																	</li>
+
+																	<li>
+																		<span code="48318" class="sun_item"><i></i> 胸骨左缘三﹑四肋间</span>
+																	</li>
+																</ul>
+															</li>
+
+															<li>
+																<span code="48226" class="sun_item"><i></i> 舒张期杂音</span>
+																<ul>
+																	<li>
+																		<span code="48320" class="sun_item"><i></i> 二尖瓣区</span>
+																	</li>
+
+																	<li>
+																		<span code="48322" class="sun_item"><i></i> 主动脉瓣区</span>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+													</li>
+
+												</ul>
+											</li>
+
+											<li>
+												<span code="48059" class="sun_item"><i></i> 少见心脏病</span>
+												<ul>
+													<li>
+														<span code="48128" class="sun_item"><i></i> 先天性心血管病</span>
+													</li>
+												</ul>
+											</li>
+
+										</ul>
+
+									</li>
+
+								</ul>
+
+							</li>
+							<!--心脏听诊 end-->
+
+							<!-- 肺部听诊 begin-->
+							<li>
+
+								<span code="1"><i></i> 肺部听诊</span>
+
+								<ul>
+
+									<li>
+
+										<span code="48020" class="sun_item"><i></i> 听诊基础</span>
+
+									</li>
+
+									<li>
+
+										<span code="48021" class="sun_item"><i></i> 肺部听诊</span>
+										<ul>
+											<li>
+
+												<span code="48079" class="sun_item"><i></i> 正常呼吸音</span>
+												<ul>
+													<li>
+														<span code="48500" class="sun_item"><i></i> 支气管呼吸音</span>
+													</li>
+
+													<li>
+														<span code="48501" class="sun_item"><i></i> 肺泡呼吸音</span>
+													</li>
+
+													<li>
+														<span code="48502" class="sun_item"><i></i> 支气管肺泡呼吸音</span>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+
+												<span code="48080" class="sun_item"><i></i> 呼吸频率</span>
+
+											</li>
+
+											<li>
+
+												<span code="48081" class="sun_item"><i></i> 呼吸节律</span>
+
+											</li>
+
+											<li>
+												<span code="48082" class="sun_item"><i></i> 异常呼吸音</span>
+												<ul>
+													<li>
+														<span code="48514" class="sun_item"><i></i> 异常肺泡呼吸音</span>
+														<ul>
+															<li>
+																<span code="48610" class="sun_item"><i></i> 肺泡呼吸音增强</span>
+															</li>
+
+															<li>
+																<span code="48611" class="sun_item"><i></i> 肺泡呼吸音减弱或消失</span>
+															</li>
+
+															<li>
+																<span code="48613" class="sun_item"><i></i> 断续性呼吸</span>
+															</li>
+
+															<li>
+																<span code="48614" class="sun_item"><i></i> 粗糙性呼吸音</span>
+															</li>
+														</ul>
+													</li>
+
+													<li>
+														<span code="48515" class="sun_item"><i></i> 异常支气管呼吸音</span>
+														<ul>
+															<li>
+																<span code="48615" class="sun_item"><i></i> 肺组织实变</span>
+															</li>
+
+															<li>
+																<span code="48616" class="sun_item"><i></i> 肺内大空腔</span>
+															</li>
+														</ul>
+													</li>
+
+													<li>
+														<span code="48516" class="sun_item"><i></i> 异常支气管肺泡呼吸音</span>
+														<ul>
+															<li>
+																<span code="48618" class="sun_item"><i></i> 肺小实变</span>
+															</li>
+
+															<li>
+																<span code="48619" class="sun_item"><i></i> 深部肺实变</span>
+															</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<span code="48083" class="sun_item"><i></i> 附加音</span>
+												<ul>
+													<li>
+														<span code="48517" class="sun_item"><i></i> 湿罗音</span>
+														<ul>
+															<li>
+																<span code="48621" class="sun_item"><i></i> 粗湿罗音</span>
+																<ul>
+																	<li>
+																		<span code="48710" class="sun_item"><i></i> 响亮性粗湿罗音</span>
+																	</li>
+
+																	<li>
+																		<span code="48711" class="sun_item"><i></i> 非响亮性粗湿罗</span>
+																	</li>
+
+																</ul>
+															</li>
+
+															<li>
+																<span code="48622" class="sun_item"><i></i> 中湿罗音</span>
+																<ul>
+																	<li>
+																		<span code="48714" class="sun_item"><i></i> 响亮中湿罗音</span>
+																	</li>
+																</ul>
+															</li>
+
+															<li>
+																<span code="48623" class="sun_item"><i></i> 细湿罗音</span>
+																<ul>
+																	<li>
+																		<span code="48717" class="sun_item"><i></i> 响亮性细湿罗音</span>
+																	</li>
+																</ul>
+															</li>
+
+															<li>
+																<span code="48624" class="sun_item"><i></i> 捻发音</span>
+															</li>
+
+															<li>
+																<span code="48625" class="sun_item"><i></i> Velcro啰音</span>
+															</li>
+
+														</ul>
+														<li>
+															<span code="48518" class="sun_item"><i></i> 干罗音</span>
+															<ul>
+																<li>
+																	<span code="48627" class="sun_item"><i></i> 高调干罗音</span>
+																	<ul>
+																		<li>
+																			<span code="48721" class="sun_item"><i></i> 哨笛音</span>
+																		</li>
+
+																		<li>
+																			<span code="48908" class="sun_item"><i></i> 鸟鸣音</span>
+																		</li>
+
+																		<li>
+																			<span code="48725" class="sun_item"><i></i> 双相性哮鸣音</span>
+																		</li>
+																	</ul>
+																</li>
+
+																<li>
+																	<span code="48628" class="sun_item"><i></i> 低调干罗音</span>
+																</li>
+															</ul>
+														</li>
+													</li>
+
+												</ul>
+
+											</li>
+
+											<li>
+												<span code="48084" class="sun_item"><i></i> 语音共振</span>
+												<ul>
+													<li>
+														<span code="48519" class="sun_item"><i></i> 语音共振正常</span>
+													</li>
+
+													<li>
+														<span code="48521" class="sun_item"><i></i> 语音共振增强</span>
+													</li>
+												</ul>
+											</li>
+
+										</ul>
+
+									</li>
+
+									<li>
+										<span code="48086" class="sun_item"><i></i> 鉴别听诊</span>
+										<ul>
+											<li>
+												<span code="48087" class="sun_item"><i></i> 鉴别听诊</span>
+											</li>
+
+											<li>
+												<span code="48088" class="sun_item"><i></i> 鉴别听诊</span>
+											</li>
+										</ul>
+									</li>
+								</ul>
+
+							</li>
+							<!-- 肺部听诊 end-->
+
+							<!-- 腹部触诊 begin-->
+							<li>
+								<span code="2"><i></i> 腹部触诊</span>
+								<ul>
+									<li>
+										<span code="48040" class="sun_item"><i></i> 基础知识</span>
+									</li>
+
+									<li>
+										<span code="48041" class="sun_item"><i></i> 腹部触诊内容</span>
+										<ul>
+											<li>
+												<span code="48057" class="sun_item"><i></i> 脏器触诊</span>
+
+												<ul>
+													<li>
+														<span code="48800" class="sun_item"><i></i> 肝脏触诊</span>
+													</li>
+
+													<li>
+														<span code="48801" class="sun_item"><i></i> 脾脏触诊</span>
+													</li>
+
+													<li>
+														<span code="48802" class="sun_item"><i></i> 胆囊触诊</span>
+													</li>
+												</ul>
+											</li>
+
+											<li>
+												<span code="48058" class="sun_item"><i></i> 腹部包块</span>
+											</li>
+										</ul>
+									</li>
+
+									<li>
+										<span code="48042" class="sun_item"><i></i> 乳房触诊</span>
+									</li>
+
+									<li>
+										<span code="48043" class="sun_item"><i></i> 腹部听诊</span>
+									</li>
+								</ul>
+							</li>
+							<!-- 腹部触诊 end-->
+
+							<!--心电图 begin-->
+							<li>
+
+								<span code="4"><i></i> 心电图课件</span>
+
+								<ul>
+
+									<li>
+
+										<span code="48040" class="sun_item"><i></i> 心电图教学软件</span>
+										<ul>
+											<li>
+												<span code="48075" class="sun_item"><i></i> 临床心电学的基本知识</span>
+											</li>
+
+											<li>
+												<span code="48076" class="sun_item"><i></i> 心电图的测量和正常数据</span>
+											</li>
+
+											<li>
+												<span code="48077" class="sun_item"><i></i> 临床常见异常心电图</span>
+												<ul>
+													<li>
+														<span code="48175" class="sun_item"><i></i> 心房、心室肥大</span>
+													</li>
+
+													<li>
+														<span code="48176" class="sun_item"><i></i> 心肌缺血与ST-T改变</span>
+													</li>
+
+													<li>
+														<span code="48177" class="sun_item"><i></i> 心肌梗死</span>
+													</li>
+
+													<li>
+														<span code="48178" class="sun_item"><i></i> 心律失常</span>
+														<ul>
+															<li>
+																<span code="48280" class="sun_item"><i></i> 传导异常</span>
+															</li>
+														</ul>
+													</li>
+
+													<li>
+														<span code="48180" class="sun_item"><i></i> 电解质紊乱和药物影响</span>
+													</li>
+												</ul>
+											</li>
+										</ul>
+
+									</li>
+
+								</ul>
+
+							</li>
+							<!--心电图 end-->
+						</ul>
+
+					</div>
+
+					<div>
+						<fieldset>
+							<table class="table table-hover table-bordered course_table">
+								<thead>
+								<tr class="info">
+									<th height="10">编号</th>
+									<th>课件名称</th>
+									<th>标准病例声音</th>
+									<th>扩音听诊</th>
+								</tr>
+								</thead>
+								<tbody id = "ajaxContent">
+
+								</tbody>
+							</table>
+							<ul class="pagination pull-right">
+                                {x2;$cases['pages']}
+							</ul>
+
+						</fieldset></div>
+				</div>
+
+			</div>
+{x2;if:!$userhash}
+		</div>
+	</div>
+</div>
+{x2;include:footer}
+</body>
+<script type="text/javascript">
+    $(function(){
+
+        $('.tree_node li').addClass('parent_li').find(' > span').attr('title', '点击收起');
+        $('.tree_node li:has(ul)').find(' > span > i').addClass('icon-folder-close');
+        change_stata('c');
+        $('.tree_node li.parent_li > span').on('click', function (e) {
+            var children = $(this).parent('li.parent_li').find(' > ul > li');
+            if (children.is(":visible")) {
+                children.hide('fast');
+                $(this).attr('title', '点击展开').find(' > i').addClass('icon-folder-close').removeClass('icon-folder-open');
+
+            } else {
+                children.show('fast');
+                $(this).attr('title', '点击收起').find(' > i').addClass('icon-folder-open').removeClass('icon-folder-close');
+				var code = $(this).attr("code");
+                $.ajax({
+                    type: 'get',
+                    url: 'index.php?document-master-attachtype-getCourseList&code='+code,
+                    success:function (data) {
+                        var content=eval("(" + data + ")");
+						$(".pagination").html(content['pages']);
+                        $("#ajaxContent").html(content['html']);
+                    }
+                });
+            }
+            e.stopPropagation();
+        });
+
+    });
+//tree_ul
+    function change_stata(stata){
+		if(stata=="c"){
+            $('.parent_li').each( function() {
+                var children = $(this).find(' > ul > li');
+                children.hide('fast');
+			});
+		}
+	}
+
+    function play(obj) {
+        var cid = "audio"+$(obj).attr("cid");
+        sound=document.getElementById(cid);
+        sound.play();
+    }
+
+    function pause(obj){
+        var cid = "audio"+$(obj).attr("cid");
+        sound=document.getElementById(cid);
+        sound.pause();
+    }
+
+    function getPageContent(obj) {
+		var page = $(obj).attr("page");
+		var code = $(obj).attr("code");
+        $.ajax({
+            type: 'get',
+            url: 'index.php?document-master-attachtype-getCourseList&code='+code+'&page='+page,
+            success:function (data) {
+                var content=eval("(" + data + ")");
+                $(".pagination").html(content['pages']);
+                $("#ajaxContent").html(content['html']);
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        $.ajax({
+            type: 'get',
+            url: "index.php?document-master-attachtype-getMenu",
+            dataType: "json",
+            success:function (data) {
+                var topMenu = data['top_menu'];
+                var allMenu = data['all_menu'];
+                var menuStr="";
+                var t="";
+                for(var i=0;i<topMenu.length;i++){
+                    menuStr+="<li><span code='"+topMenu[i]['menu_code']+"'><i></i> "+topMenu[i]['menu_name']+"</span></li>";
+                    t+=makeTree(topMenu,allMenu);
+                }
+
+                console.log(t);
+            }
+        });
+    });
+
+    function makeTree(menu, allMenu) {
+        var resStr = "";
+        for(var i=0;i<allMenu.length;i++){
+            if(menu['menu_code'] == allMenu['father_code']){
+               /* var temStr="<ul><li><span code='"+allMenu[i]['menu_code']+"'><i></i> "+allMenu[i]['menu_name']+"</span></li>";
+                resStr=temStr+"</ul>";*/
+                allMenu[i]['nodes'] = makeTree(allMenu[i],allMenu);
+               resStr[i]=allMenu[i];
+               console.log(resStr);
+            }
+        }
+       /* foreach (allMenu as $k => $v) {
+            if ($menu['menu_code'] == $v['father_code']) {
+                $v['nodes'] = $this->createTreeNew($v, $allMenu);
+                $tree[] = $v;
+            }
+        }*/
+        return resStr;
+    }
+
+</script>
+</html>
+{x2;endif}

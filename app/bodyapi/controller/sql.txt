@@ -1,0 +1,89 @@
+新用户信息
+    SELECT
+    	u.user_id,
+    	u.nickname,
+    	FROM_UNIXTIME(u.reg_time,'%Y-%m-%d') AS reg_time,
+    	(
+    		SELECT
+    			FROM_UNIXTIME(add_time, '%Y-%m-%d')
+    		FROM
+    			tp_order
+    		WHERE
+    			user_id = o.user_id
+    		ORDER BY
+    			order_id ASC
+    		LIMIT 0,
+    		1
+    	) AS first_time,
+    	(
+    		SELECT
+    			COUNT(1)
+    		FROM
+    			tp_order
+    		WHERE
+    			user_id = o.user_id
+    	) AS order_count
+    FROM
+    	tp_order AS o
+    LEFT JOIN tp_users AS u ON o.user_id = u.user_id
+    WHERE
+    	add_time >= UNIX_TIMESTAMP('2017-10-1')					#开始时间
+    AND add_time <= UNIX_TIMESTAMP('2017-10-30')			    #结束时间
+    AND o.user_id NOT IN (
+    	SELECT
+    		user_id
+    	FROM
+    		tp_order
+    	WHERE
+    		add_time <= UNIX_TIMESTAMP('2017-10-1')				#开始时间
+    	GROUP BY
+    		user_id
+    )
+    GROUP BY
+    	o.user_id
+    ORDER BY
+    	first_time ASC;
+
+新用户订单信息
+    SELECT
+    	o.order_sn,
+    	u.user_id,
+    	u.nickname,
+    	(SELECT `name` FROM tp_region WHERE `id`=o.province) AS province,
+    	(SELECT `name` FROM tp_region WHERE `id`=o.city) AS city,
+    	(SELECT `name` FROM tp_region WHERE `id`=o.district) AS district,
+    	o.address,
+    	o.mobile,
+    	o.goods_price,
+    	o.shipping_price,
+    	o.coupon_price,
+    	o.order_amount,
+    	o.total_amount,
+    	FROM_UNIXTIME(o.add_time, '%Y-%m-%d') AS add_time
+    FROM
+    	tp_order AS o
+    LEFT JOIN tp_users AS u ON o.user_id=u.user_id
+    WHERE
+    	o.user_id IN (
+    		SELECT
+    			user_id
+    		FROM
+    			tp_order AS o
+    		WHERE
+    			add_time >= UNIX_TIMESTAMP('2017-10-1')				#开始时间
+    		AND add_time <= UNIX_TIMESTAMP('2017-10-30')		    #结束时间
+    		AND o.user_id NOT IN (
+    			SELECT
+    				user_id
+    			FROM
+    				tp_order
+    			WHERE
+    				add_time <= UNIX_TIMESTAMP('2017-10-1')			#开始时间
+    			GROUP BY
+    				user_id
+    		)
+    		GROUP BY
+    			o.user_id
+    	)
+    AND add_time <= UNIX_TIMESTAMP('2017-10-30')				    #结束时间
+    ORDER BY o.user_id

@@ -389,6 +389,89 @@ class action extends app
         exit(json_encode($args));
     }
 
+
+    private function _getPaperInfo($paperId){
+
+//        $paperId = 10;
+//        $data=$_POST;
+        $r = $this->exam->getExamSettingById($paperId);
+        $questions = array();
+        $questionrows = array();
+        foreach ($r['examquestions'] as $key => $p) {
+
+            if($r['question_type']==1){
+                foreach ($r['examquestions'] as $key => $p) {
+                    $qids = '';
+                    $qrids = '';
+                    if ($p['questions']) $qids = trim($p['questions'], " ,");
+                    if ($qids)
+                        $questions[$key] = $this->exam->getQuestionListByIds($qids);
+                    if ($p['rowsquestions']) $qrids = trim($p['rowsquestions'], " ,");
+                    if ($qrids) {
+                        $qrids = explode(",", $qrids);
+                        foreach ($qrids as $t) {
+                            $qr = $this->exam->getQuestionRowsById($t);
+                            if ($qr)
+                                $questionrows[$key][$t] = $qr;
+                        }
+                    }
+                }
+            }else{
+                foreach ($r['examquestions'] as $key => $p) {
+                    $qids = '';
+                    if ($p['questions']) $qids = trim($p['questions'], " ,");
+                    if ($qids)
+                        $question[$key] = $this->exam->getQuestionsByIds($qids);
+                }
+                foreach ($question as $k=>$v){
+                    foreach ($v as $k1=>$v1){
+                        $questions[$k][$k1]['questionid'] = $v1['opt_question_id'];
+                        $questions[$k][$k1]['questiontype'] = 1;
+                        $questions[$k][$k1]['question'] = "";
+                        $questions[$k][$k1]['questionuserid'] = 0;
+                        $questions[$k][$k1]['questionusername'] = "";
+                        $questions[$k][$k1]['questionlastmodifyuser'] = "";
+                        $questions[$k][$k1]['questionselectnumber'] = count($v1['item']);
+                        $questions[$k][$k1]['questionanswer'] = $v1['right_item'];
+                        $questions[$k][$k1]['questiondescribe'] = $v1['opt_question_memo'];
+                        $questions[$k][$k1]['questionknowsid'] = "";
+                        $questions[$k][$k1]['questioncreatetime'] = $v1['addtime'];
+                        $questions[$k][$k1]['questionstatus'] = 1;
+                        $questions[$k][$k1]['questionhtml'] = false;
+                        $questions[$k][$k1]['questionparent'] = 0;
+                        $questions[$k][$k1]['questionsequence'] = 0;
+                        $questions[$k][$k1]['questionlevel'] = 1;
+                        $questions[$k][$k1]['questionaboutfile'] = $v1['about_file'];
+                        $questionStr = "&lt;p&gt;";
+                        $soundStr = "&lt;p&gt;";
+                        //&lt;p&gt;A:张治中&lt;/p&gt;&lt;p&gt;B:张自忠&lt;/p&gt;&lt;p&gt;C:赵登禹&lt;/p&gt;&lt;p&gt;D:左权&lt;/p&gt;
+                        $search = array("files/lung/",'files/heart/');
+                        foreach ($v1['item'] as $kk=>$vv){
+                            if(($v1['organ_type']==0 || $v1['organ_type']==1) && $vv['item_title']==$v1['right_item']){
+                                $questions[$k][$k1]['questionaboutfile']=str_replace($search,"",$vv['sound_file']);
+                            }
+                            $questionStr.=$vv['item_title'].":".$vv["item_content"]."&lt;/p&gt;&lt;p&gt;";
+                            $soundStr.=$vv['item_title'].":".str_replace($search,"",$vv['sound_file'])."&lt;/p&gt;&lt;p&gt;";
+                        }
+                        $questions[$k][$k1]['questionselect'] = $questionStr;
+                        $questions[$k][$k1]['questionsound'] = $soundStr;
+                    }
+                }
+            }
+        }
+        $args['examsessionquestion'] = array('questions' => $questions, 'questionrows' => $questionrows);
+        $args['examsessionsetting'] = $r;
+        $args['examsessionstarttime'] = TIME;
+        $args['examsession'] = $r['exam'];
+        $args['examsessionscore'] = 0;
+        $args['examsessiontime'] = $r['examsetting']['examtime'];
+        $args['examsessiontype'] = 2;
+        $args['examsessionkey'] = $r['examid'];
+        $args['examsessionissave'] = 0;
+
+       return $args;
+    }
+
     private function getPaperById(){
         $paperId = $this->ev->post('paper_id');
         $paper   = $this->api->getPaperById($paperId);
@@ -1017,19 +1100,39 @@ class action extends app
         $examId = $this->ev->post("exam_id");
         $userName = $this->ev->post("user_name");
 
-//        $paperId = 2;
-//        $examId = 2;
-//        $userName = 15021464551;
+       /* $paperId = 2;
+        $examId = 2;
+        $userName = 15021464551;*/
 
        /* $data = $_POST;
 
         $this->save_log($data,"history");*/
+
+
+       $paperInfo = $this->_getPaperInfo($examId);
+
+
+       $questions = $paperInfo["examsessionquestion"];
+       foreach ($questions as $k=>$v){
+
+           foreach ($v as $k1=>$v1){
+               $q = array();
+               foreach ($v1 as $k2=>$v2){
+                   $q[$v2["questionid"]] = $v2;
+               }
+               $questions[$k][$k1]=$q;
+           }
+
+       }
+
 
         $args[] = array("AND", "ehexamid = :ehexamid", 'ehexamid', $paperId);
         $args[] = array("AND", "ehbasicid = :ehbasicid", 'ehbasicid', $examId);
         $args[] = array("AND", "ehusername = :ehusername", 'ehusername', $userName);
 
         $info = $this->api->getExamHistoryByUserExamPaper($args);
+
+        $info[0]["ehquestion"]=$questions;
 
         $userAnswer = $info[0]["ehuseranswer"];
         $i=0;
@@ -1039,11 +1142,64 @@ class action extends app
             $i++;
         }
         $info[0]["ehuseranswer"]=$temp;
+        $paperInfo['useranswer'] = $temp;
 //        foreach ($infos as $k=>$v){
 //
 //        }
         exit(json_encode($info[0]));
+//        exit(json_encode($paperInfo));
     }
+
+    private function countExam(){
+        $paperId = $this->ev->post("paper_id");
+        $examId = $this->ev->post("exam_id");
+
+        /*$paperId = 2;
+        $examId = 2;*/
+        $args[] = array("AND", "ehexamid = :ehexamid", 'ehexamid', $paperId);
+        $args[] = array("AND", "ehbasicid = :ehbasicid", 'ehbasicid', $examId);
+        $info = $this->api->getExamHistoryByUserExamPaper($args);
+        $questionIds = array_keys($info[0]["ehuseranswer"]);
+
+        $rightAnswer = array();
+        foreach ($info[0]["ehquestion"]["questions"] as $k=>$v){
+            foreach ($v as $k1=>$v1){
+                $rightAnswer[$k1]=$v1["questionanswer"];
+            }
+        }
+
+        foreach ($questionIds as $k=>$v){
+            $q[$v]=array();
+        }
+
+        foreach ($info as $k1=>$v1){
+            foreach ($v1["ehuseranswer"] as $k2=>$v2){
+                array_push($q[$k2],$v2);
+            }
+        }
+
+        foreach ($q as $k=>$v){
+            $q[$k]=array_count_values($q[$k]);
+        }
+
+
+        $j = 0;
+        $res = array();
+        foreach ($q as $k=>$v){
+            $i = 0;
+            foreach ($v as $k1=>$v1){
+                $res[$j][$i]["questionId"]=$k;
+                $res[$j][$i]["item"] = $k1;
+                $res[$j][$i]["percent"] = round($v1/count($info),2)."";
+                $res[$j][$i]["if_right"] = $k1==$rightAnswer["$k"]?1:0;
+                $i++;
+            }
+            $j++;
+        }
+        $examcount[0]["examcount"] = $res;
+        exit(json_encode($examcount));
+    }
+
 
     private function getInfoByExamPaper(){
         $paperId = $this->ev->post("paper_id");

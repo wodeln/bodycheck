@@ -534,6 +534,40 @@ class action extends app
         );*/
 
 
+        /*$postAnswer = array (
+            'answerList' =>
+                array (
+                    0 =>
+                        array (
+                            'answer' => '1,3,7',
+                            'questionID' => 118,
+                        ),
+                    1 =>
+                        array (
+                            'answer' => '4,10',
+                            'questionID' => 119,
+                        ),
+                    2 =>
+                        array (
+                            'answer' => '4,9',
+                            'questionID' => 120,
+                        ),
+                    3 =>
+                        array (
+                            'answer' => '4,11',
+                            'questionID' => 121,
+                        ),
+                    4 =>
+                        array (
+                            'answer' => '5,12',
+                            'questionID' => 122,
+                        ),
+                ),
+            'basicID' => '2',
+            'examID' => '6',
+            'userName' => '15021464551',
+        );*/
+
 
         //理论试题
         /*$postAnswer = array (
@@ -656,7 +690,7 @@ class action extends app
                         }
 
                         $q[$v["opt_question_id"]]['questionid']=$v["opt_question_id"];
-                        $q[$v["opt_question_id"]]['questiontype']=$v["organ_type"]==2? 2:1;
+                        $q[$v["opt_question_id"]]['questiontype']=1;
                         $q[$v["opt_question_id"]]['question']=$qName;
                         $q[$v["opt_question_id"]]['questionuserid']="0";
                         $q[$v["opt_question_id"]]['questionusername']="";
@@ -1100,6 +1134,9 @@ class action extends app
         $examId = $this->ev->post("exam_id");
         $userName = $this->ev->post("user_name");
 
+        $data = $_POST;
+        $this->save_log($data,"history");
+
        /* $paperId = 2;
         $examId = 2;
         $userName = 15021464551;*/
@@ -1109,7 +1146,7 @@ class action extends app
         $this->save_log($data,"history");*/
 
 
-       $paperInfo = $this->_getPaperInfo($examId);
+       $paperInfo = $this->_getPaperInfo($paperId);
 
 
        $questions = $paperInfo["examsessionquestion"];
@@ -1138,7 +1175,7 @@ class action extends app
         $i=0;
         foreach ($userAnswer as $k=>$v){
             $temp[$i]["question_id"]=$k;
-            $temp[$i]["user_answer"]=$v;
+            $temp[$i]["user_answer"]=count($v)>1?implode(",",$v):$v;
             $i++;
         }
         $info[0]["ehuseranswer"]=$temp;
@@ -1205,13 +1242,17 @@ class action extends app
         $paperId = $this->ev->post("paper_id");
         $examId = $this->ev->post("exam_id");
 
-        /*$paperId = 1;
-        $examId = 2;*/
+        $paperId = 1;
+        $examId = 2;
 
         $args[] = array("AND", "ehexamid = :ehexamid", 'ehexamid', $paperId);
         $args[] = array("AND", "ehbasicid = :ehbasicid", 'ehbasicid', $examId);
 
         $infos = $this->api->getInfoByExamPaper($args);
+        foreach ($infos as $k => $v){
+            $user = $this->user->getUserById($v["ehuserid"]);
+            $infos[$k]["usertruename"]=$user["usertruename"];
+        }
         exit(json_encode($infos));
     }
 
@@ -1274,6 +1315,105 @@ class action extends app
 
         }
     }
+
+
+    private function test(){
+        $jsonStr = '{
+	"result": "true",
+	"asks": [
+		["0.00000088", 1176],
+		["0.00000087", 1149808.51],
+		["0.00000086", 136776.2],
+		["0.00000085", 369770.222812],
+		["0.00000084", 5952.3],
+		["0.00000083", 204119.356055],
+		["0.00000082", 128963.8],
+		["0.00000081", 346761.916016],
+		["0.00000080", 128527.5],
+		["0.00000079", 177592.96],
+		["0.00000078", 240890.61958],
+		["0.00000077", 50135.89],
+		["0.00000076", 250891.8],
+		["0.00000075", 313602.5],
+		["0.00000074", 219842.753125],
+		["0.00000073", 333022.627454],
+		["0.00000072", 230210.8],
+		["0.00000071", 63939.35],
+		["0.00000070", 508658.7],
+		["0.00000069", 101531.51],
+		["0.00000068", 144156.7],
+		["0.00000067", 337998.84825612],
+		["0.00000066", 196848.3],
+		["0.00000065", 99413.174023],
+		["0.00000064", 487357],
+		["0.00000063", 153927.3],
+		["0.00000062", 220767.7],
+		["0.00000061", 183922.11311476],
+		["0.00000060", 272711.723025],
+		["0.00000059", 349990.059375],
+		["0.00000058", 420136.4],
+		["0.00000057", 81782.8],
+		["0.00000056", 446246.695],
+		["0.00000055", 5299363.5],
+		["0.00000054", 264485.5],
+		["0.00000053", 1079738.6],
+		["0.00000052", 349445.575],
+		["0.00000051", 74763.9],
+		["0.00000050", 148147.921375],
+		["0.00000049", 439797.60668147],
+		["0.00000048", 261717.26],
+		["0.00000047", 2163916.80314],
+		["0.00000046", 2550941.463084],
+		["0.00000045", 2510832.9106667],
+		["0.00000044", 26112.66231194]
+	],
+	"bids": [
+		["0.00000043", 6374038.1398528],
+		["0.00000042", 5236090.7],
+		["0.00000041", 243427.8878],
+		["0.00000040", 547800],
+		["0.00000039", 148494.5],
+		["0.00000038", 68157.8],
+		["0.00000037", 832273.05],
+		["0.00000036", 3880925.128742],
+		["0.00000035", 50000],
+		["0.00000034", 50000],
+		["0.00000030", 3000],
+		["0.00000029", 40751.706],
+		["0.00000026", 12000],
+		["0.00000025", 20000],
+		["0.00000024", 22083.3],
+		["0.00000023", 168260.8],
+		["0.00000022", 20000],
+		["0.00000021", 20000],
+		["0.00000020", 53500],
+		["0.00000019", 54210.5],
+		["0.00000018", 23333.3],
+		["0.00000017", 358235.2],
+		["0.00000016", 42399.9],
+		["0.00000015", 168000],
+		["0.00000014", 119999.9],
+		["0.00000013", 26076.9153],
+		["0.00000012", 30000],
+		["0.00000011", 34545.4],
+		["0.00000010", 2300000],
+		["0.00000009", 11300],
+		["0.00000008", 50000],
+		["0.00000006", 403333],
+		["0.00000002", 25000],
+		["0.00000001", 165000]
+	]
+}';
+
+        $jsonArray = json_decode($jsonStr,true);
+        foreach ($jsonArray["asks"] as $k=>$v){
+            echo "ask第".$k."组数据：->";
+            echo "price：".$v[0]." -- ";
+            echo "number：".$v[1]."<br />";
+        }
+        echo "";
+    }
+
 
     private function readOptionCardiogram(){
         $filePath = 'files/question.xls';

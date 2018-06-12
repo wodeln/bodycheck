@@ -18,7 +18,7 @@
 							<li><a href="index.php?{x2;$_app}-master-contents">标准化病例</a></li>
 							<li class="active">{x2;$categories[$catid]['catname']}</li>
 							{x2;else}
-							<li class="active">标准化病例</li>
+							<li class="active">听诊病例</li>
 							{x2;endif}
 						</ol>
 					</div>

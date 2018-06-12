@@ -112,7 +112,7 @@
 									                <li class="text-center">
 									                    <div class="thumbnail">
 															<img class="qq-thumbnail-selector" alt="点击上传新图片">
-															<input type="hidden" class="qq-edit-filename-selector" name="args[catimg]" tabindex="0">
+															<input type="hidden" class="qq-edit-filename-selector" name="args[catimg]" id="argimg" tabindex="0">
 														</div>
 									                </li>
 									            </ul>

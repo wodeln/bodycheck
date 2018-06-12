@@ -37,9 +37,9 @@ if($action=='add'){
 
 	$isallday = $isallday?1:0;
 	$user_id=$_SESSION['currentuser']["sessionuserid"];
-	$sql="insert into `calendar` (`title`,`starttime`,`endtime`,`allday`,`color`,`user_id`,`event_type`,`event_content_id`,`event_content`) values ('$events','$starttime','$endtime','$isallday','$color','$user_id','$eventType','$eventContent')";
+	$sql="insert into `calendar` (`title`,`starttime`,`endtime`,`allday`,`color`,`user_id`,`event_type`,`event_content_id`,`event_content`) values ('$events','$starttime','$endtime','$isallday','$color','$user_id','$eventContentId','$eventType','$eventContent')";
 
-	$query = mysql_query("insert into `calendar` (`title`,`starttime`,`endtime`,`allday`,`color`, `user_id`,`event_type`,`event_content_id`,`event_content`) values ('$events','$starttime','$endtime','$isallday','$color','$user_id','$eventType','$eventContentId','$eventContent')");
+	$query = mysql_query($sql);
 	if(mysql_insert_id()>0){
 		echo '1';
 	}else{

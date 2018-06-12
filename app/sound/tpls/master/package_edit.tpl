@@ -14,7 +14,7 @@
 					<div class="col-xs-12">
 						<ol class="breadcrumb">
 							<li><a href="index.php?{x2;$_app}-master">{x2;$apps[$_app]['appname']}</a></li>
-							<li><a href="index.php?{x2;$_app}-master-discern">听诊套餐</a></li>
+							<li><a href="index.php?{x2;$_app}-master-soundcase-soundCasePackage">听诊套餐</a></li>
 							<li class="active">添加听诊套餐</li>
 						</ol>
 					</div>

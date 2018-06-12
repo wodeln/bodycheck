@@ -3,7 +3,7 @@
 		<div class="main itembox">
 			<div class="col-xs-12">
 				<ul class="list-unstyled">
-					<li class="text-center"><a href="">嘉奕医学创伤急救云培训平台</a></li>					<li class="text-center"><a href="">Copyright © 嘉奕医学科技爱有限公司  2017</a></li>
+					<li class="text-center"><a href="">嘉奕医学创伤急救云培训平台</a></li>					<li class="text-center"><a href="">Copyright © 嘉奕医学科技有限公司  2017</a></li>
 				</ul>
 			</div>
 		</div>

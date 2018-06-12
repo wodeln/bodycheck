@@ -292,7 +292,7 @@ class action extends app
 		if($search['groupid'])$args[] = array('AND',"usergroupid = :usergroupid",'usergroupid',$search['groupid']);
 		if($search['userclassid']) $args[]=array('AND',"userclassid = :userclassid",'userclassid',$search['userclassid']);
 		if($search['subject1']) $args[]=array('AND',"subject1 = :subject1",'subject1',$search['subject1']);
-		if($search['userclassid']) $args[]=array('AND',"academy = :academy",'academy',$search['academy']);
+		if($search['academy']) $args[]=array('AND',"academy = :academy",'academy',$search['academy']);
 		if($search['stime'] || $search['etime'])
 		{
 			if(!is_array($args))$args = array();

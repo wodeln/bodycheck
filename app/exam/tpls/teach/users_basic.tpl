@@ -34,12 +34,12 @@
 				                </tr>
 				            </thead>
 							<tr>
-								<td>
+								<!--<td>
 									考场ID：
 								</td>
 								<td>
 									<input name="search[basicid]" class="form-control" type="text" class="number" value="{x2;$search['basicid']}"/>
-								</td>
+								</td>-->
 								<td>
 									关键字：
 								</td>
@@ -57,32 +57,22 @@
 								  		{x2;endtree}
 							  		</select>
 					        	</td>-->
-								<td></td>
-								<td></td>
-					        </tr>
-					        <tr>
-					        	<!--<td>
-									API标识：
-								</td>
-								<td>
-									<input class="form-control" name="search[basicapi]" type="text" value="{x2;$search['basicapi']}"/>
-								</td>-->
 								<td>
 									科目：
 								</td>
 								<td>
-					        		<select name="search[basicsubjectid]" class="form-control">
-						        		<option value="0">选择科目</option>
-								  		{x2;tree:$subjects,subject,sid}
-								  		<option value="{x2;v:subject['subjectid']}"{x2;if:v:subject['subjectid'] == $search['basicsubjectid']} selected{x2;endif}>{x2;v:subject['subject']}</option>
-								  		{x2;endtree}
-							  		</select>
-					        	</td>
+									<select name="search[basicsubjectid]" class="form-control">
+										<option value="0">选择科目</option>
+										{x2;tree:$subjects,subject,sid}
+										<option value="{x2;v:subject['subjectid']}"{x2;if:v:subject['subjectid'] == $search['basicsubjectid']} selected{x2;endif}>{x2;v:subject['subject']}</option>
+										{x2;endtree}
+									</select>
+								</td>
 								<td>
 									<button class="btn btn-primary" type="submit">提交</button>
 								</td>
-								<td></td>
-							</tr>
+					        </tr>
+
 						</table>
 						<div class="input">
 							<input type="hidden" value="1" name="search[argsmodel]" />

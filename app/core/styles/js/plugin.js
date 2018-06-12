@@ -774,6 +774,7 @@ function inituploader() {
             'onComplete': function (id, fileName, responseJSON) {
                 $(_this).find('[qq-file-id=' + id + '] .qq-edit-filename-selector').val(fileName);
                 $("#sound_file").val(responseJSON.thumb);
+                $('#argimg').val(responseJSON.thumb);
                 if (petype == 'list') {
                     var tpl = $(_this).find('.listimg').first().html().replace(/\*name\*/g, $(_this).attr('attr-name'));
                     tpl = tpl.replace(/\*value\*/g, responseJSON.thumb);

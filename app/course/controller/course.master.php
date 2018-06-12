@@ -57,7 +57,7 @@ class action extends app
 				'statusCode' => 200,
 				"message" => "操作成功",
 			    "callbackType" => "forward",
-			    "forwardUrl" => "index.php?course-master-course&catid={$course['cscatid']}&page={$page}{$u}"
+			    "forwardUrl" => "index.php?course-master-course&page={$page}{$u}"
 			);
 			$this->G->R($message);
 		}

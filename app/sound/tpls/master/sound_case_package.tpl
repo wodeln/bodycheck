@@ -76,7 +76,7 @@
 									<td align="center">
                                         {x2;v:case['add_name']}
 									</td>
-									<td>{x2;v:case['add_time']}</td>
+									<td>{x2;date:v:case['add_time'],'Y-m-d'}</td>
 									<td class="actions">
 										<a class="btn" href="index.php?sound-master-soundcase-packageEdit&soundcase_package_id={x2;v:case['soundcase_package_id']}&page={x2;$page}{x2;$u}" title="修改"><em class="glyphicon glyphicon-edit"></em></a>
 										<a msg="删除后不能恢复，您确定要进行此操作吗？" class="btn confirm"  href="index.php?sound-master-soundcase-packageDel&soundcase_package_id={x2;v:case['soundcase_package_id']}&page={x2;$page}{x2;$u}" title="删除"><em class="glyphicon glyphicon-remove"></em></a>

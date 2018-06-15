@@ -130,7 +130,7 @@ class action extends app
                 'statusCode' => 200,
                 "message" => "操作成功",
                 "callbackType" => "forward",
-                "forwardUrl" => "index.php?sound-master-soundCasePackage&page={$page}{$this->u}"
+                "forwardUrl" => "index.php?sound-master-soundcase-soundCasePackage&page={$page}{$this->u}"
             );
             exit(json_encode($message));
         }else{

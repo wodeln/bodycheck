@@ -24,7 +24,7 @@ if($type==1){
         );
     }
 }elseif ($type==2){
-    $sql = "SELECT basicid,`basic` FROM x2_basic WHERE `basic` LIKE '%$key%'";
+    $sql = "SELECT basicid,`basic` FROM x2_basic WHERE basictype!=1 AND `basic` LIKE '%$key%'";
     $query = mysql_query($sql);
     while($row=mysql_fetch_array($query)){
         $data[] = array(

@@ -37,13 +37,13 @@ if($action=='add'){
 
 	$isallday = $isallday?1:0;
 	$user_id=$_SESSION['currentuser']["sessionuserid"];
-	$sql="insert into `calendar` (`title`,`starttime`,`endtime`,`allday`,`color`,`user_id`,`event_type`,`event_content_id`,`event_content`) values ('$events','$starttime','$endtime','$isallday','$color','$user_id','$eventContentId','$eventType','$eventContent')";
+	$sql="insert into `calendar` (`title`,`starttime`,`endtime`,`allday`,`color`,`user_id`,`event_type`,`event_content_id`,`event_content`) values ('$events','$starttime','$endtime','$isallday','$color','$user_id','$eventType','$eventContentId','$eventContent')";
 
 	$query = mysql_query($sql);
 	if(mysql_insert_id()>0){
 		echo '1';
 	}else{
-		echo '写入失败！';
+		echo '写入失败';
 	}
 }elseif($action=="edit"){
 	$id = intval($_POST['id']);

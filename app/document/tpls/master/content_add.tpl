@@ -14,7 +14,7 @@
 					<div class="col-xs-12">
 						<ol class="breadcrumb">
 							<li><a href="index.php?{x2;$_app}-master">{x2;$apps[$_app]['appname']}</a></li>
-							<li><a href="index.php?{x2;$_app}-master-contents&page={x2;$page}">课件管理</a></li>
+							<li><a href="index.php?{x2;$_app}-master-files-getCourseFile&page={x2;$page}">课件管理</a></li>
 							<li class="active">添加课件</li>
 						</ol>
 					</div>
@@ -22,7 +22,7 @@
 				<div class="box itembox" style="padding-top:10px;margin-bottom:0px;">
 					<h4 class="title" style="padding:10px;">
 						添加课件
-						<a class="btn btn-primary pull-right" href="index.php?{x2;$_app}-master-contents&courseid={x2;$courseid}&page={x2;$page}">课件管理</a>
+						<a class="btn btn-primary pull-right" href="index.php?{x2;$_app}-master-files-getCourseFile&page={x2;$page}">课件管理</a>
 					</h4>
 					<form action="index.php?document-master-files-addCourse" method="post" class="form-horizontal">
 						<div class="form-group">

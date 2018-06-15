@@ -24,7 +24,7 @@
 						<span class="pull-right">
 							<a data-toggle="dropdown" class="btn btn-primary" href="#">添加试卷 <strong class="caret"></strong></a>
 							<ul class="dropdown-menu">
-								<li><a href="index.php?{x2;$_app}-teach-exams-autopage&page={x2;$page}{x2;$u}">随机组卷</a></li>
+								<!--<li><a href="index.php?{x2;$_app}-teach-exams-autopage&page={x2;$page}{x2;$u}">随机组卷</a></li>-->
 								<li><a href="index.php?{x2;$_app}-teach-exams-selfpage&page={x2;$page}{x2;$u}">手动组卷</a></li>
 								<li><a href="index.php?{x2;$_app}-teach-exams-temppage&page={x2;$page}{x2;$u}">即时组卷</a></li>
 							</ul>

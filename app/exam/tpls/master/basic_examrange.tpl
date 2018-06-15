@@ -132,13 +132,13 @@
 							</div>
 						</div>
 
-						<div class="form-group">
+						<!--<div class="form-group">
 							<label for="basicexam_auto" class="control-label col-sm-3">肠鸣音考试试卷：</label>
 							<div class="col-sm-9 form-inline">
 								<input size="50" class="form-control" type="text" id="bowel" name="args[basicexam][bowel]" value="{x2;$basic['basicexam']['bowel']}" /> <a class="selfmodal btn btn-primary" href="javascript:;" data-target="#modal" url="index.php?exam-master-exams-selectOptExams&organ_type=2&useframe=1&target=bowel&basictype={x2;$basic['basictype']}" valuefrom="bowel">选卷</a>
-								<!--<span class="help-block">请在试卷管理处查看试卷ID，将数字ID填写在这里，多个请用英文逗号（,）隔开。留空或填0时将无法进行该项考试。</span>-->
+								<span class="help-block">请在试卷管理处查看试卷ID，将数字ID填写在这里，多个请用英文逗号（,）隔开。留空或填0时将无法进行该项考试。</span>
 							</div>
-						</div>
+						</div>-->
 
 						<div class="form-group">
 							<label for="basicexam_auto" class="control-label col-sm-3">腹部触诊考试试卷：</label>

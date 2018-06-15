@@ -287,6 +287,7 @@ class action extends app
 	private function index()
 	{
 		$search = intval($this->ev->get('search'));
+		$search = $this->ev->post('search');
 		$catid = intval($this->ev->get('catid'));
 		if(!$catid)$catid = $search['cscatid'];
 		$page = $this->ev->get('page');

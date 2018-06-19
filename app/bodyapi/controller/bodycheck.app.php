@@ -1009,7 +1009,7 @@ class action extends app
         else
         {
             $sections = $this->section->getSectionListByArgs(array(array("AND","sectionsubjectid = :sectionsubjectid",'sectionsubjectid',$this->data['currentbasic']['basicsubjectid'])));
-            $knows = $this->section->getAllKnowsBySubject($this->data['currentbasic']['basicsubjectid']);
+            $knows = $this->section->getAllKnowsBySubject($sections['sectionsubjectid']);
             $knowids = '';
             foreach($knows as $key => $p)
                 $knowids .= "{$key},";

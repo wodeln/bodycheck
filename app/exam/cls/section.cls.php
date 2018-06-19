@@ -31,7 +31,7 @@ class section_exam
 	//根据参数查询章节列表
 	public function getSectionListByArgs($args)
 	{
-		$data = array(false,'sections',$args);
+		$data = array(false,'sections');
 		$sql = $this->pdosql->makeSelect($data);
 		return $this->db->fetchAll($sql,'sectionid');
 	}
@@ -85,6 +85,13 @@ class section_exam
 		$sql = $this->pdosql->makeSelect($data);
 		return $this->db->fetchAll($sql,'knowsid');
 	}
+
+    public function getAllKnowsBySubjectId($subjectid)
+    {
+        $data = array(false,array('knows'),array(array("AND","knowssectionid = :subjectid",'subjectid',$subjectid),array("AND","knows.knowsstatus = 1")),false,false,false);
+        $sql = $this->pdosql->makeSelect($data);
+        return $this->db->fetchAll($sql,'knowsid');
+    }
 
 	//获取多科目所有知识点
 	public function getAllKnowsBySubjects($subjectids)

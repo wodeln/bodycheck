@@ -48,8 +48,10 @@ class action extends app
 			//根据章节获取知识点信息
 			case 'getknowsbysectionid':
 			$sectionid = $this->ev->get('sectionid');
-			$knowsids = trim(implode(",",$this->data['currentbasic']['basicknows'][$sectionid]),", ");
-			$aknows = $this->section->getKnowsListByArgs(array(array("AND","find_in_set(knowsid,:knowsid)",'knowsid',$knowsids),array("AND","knowsstatus = 1")));
+//			$knowsids = trim(implode(",",$this->data['currentbasic']['basicknows'][$sectionid]),", ");
+//			$knowsids = trim(implode(",",$this->section->getAllKnowsBySubject($sectionid),", "));
+//			$aknows = $this->section->getKnowsListByArgs(array(array("AND","find_in_set(knowsid,:knowsid)",'knowsid',$knowsids),array("AND","knowsstatus = 1")));
+			$aknows = $this->section->getAllKnowsBySubjectId($sectionid);
 			if($sectionid)
 			$data = '<option value="0">选择知识点</option>'."\n";
 			else
